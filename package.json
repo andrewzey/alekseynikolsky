@@ -1,5 +1,6 @@
 {
   "name": "alekseynikolsky.com",
+  "homepage": "http://andrewzey.github.io/alekseynikolsky",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
