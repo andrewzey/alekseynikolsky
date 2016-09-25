@@ -27,12 +27,12 @@ class App extends Component {
 
   render() {
     const sections = [
-      { displayName: 'Home', url: '/', component: Home },
-      { displayName: 'Research', url: '/research', component: Research },
-      { displayName: 'Credo', url: '/credo', component: Credo },
-      { displayName: 'Compositions', url: '/compositions', component: Compositions },
-      { displayName: 'About', url: '/about', component: About },
-      { displayName: 'Contact', url: '/contact', component: Contact },
+      { displayName: 'Home', url: '', component: Home },
+      { displayName: 'Research', url: 'research', component: Research },
+      { displayName: 'Credo', url: 'credo', component: Credo },
+      { displayName: 'Compositions', url: 'compositions', component: Compositions },
+      { displayName: 'About', url: 'about', component: About },
+      { displayName: 'Contact', url: 'contact', component: Contact },
     ];
 
     const pageSections = sections.map(section => (
