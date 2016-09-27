@@ -6,22 +6,8 @@ const propTypes = {
 };
 
 class Contact extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      email: '',
-      _subject: '',
-      message: '',
-      _gotcha: '',
-    };
-  }
-
-  handleChange(event, formFieldName) {
-    this.setState({[formFieldName]: event.target.value});
-  }
-
   handleSubmit(event) {
+    const formDOMNode = document.getElementById('contact-form');
     event.preventDefault();
     fetch('https://formspree.io/alekseynikolsky+webcontactform@gmail.com', {
       method: 'POST',
@@ -29,10 +15,15 @@ class Contact extends Component {
         'Accept': 'json',
       },
       redirect: 'manual',
-      body: JSON.stringify(this.state),
+      body: new FormData(formDOMNode),
     }).then(response => {
+      if (response.status >= 400 && response.status < 600) {
+        // TODO: handle error better
+        alert('There was a problem with the email server. Please try again later');
+        throw new Error("Bad response from formspree server.");
+      }
       alert('Your message was sent. Thank you!');
-      this.setState({name: '', email: '', _subject: '', message: ''});
+      formDOMNode.reset();
     }).catch(error => {
       // TODO: handle error
       console.error(error);
@@ -48,33 +39,23 @@ class Contact extends Component {
             <input
               tabIndex="1" type="text" name="name" required
               placeholder="Your Name"
-              value={this.state.name}
-              onChange={event => {this.handleChange(event, 'name')}}
             />
             <input
               tabIndex="2" type="email" name="email" required
               placeholder="Your Email Address"
-              value={this.state.email}
-              onChange={event => {this.handleChange(event, 'email')}}
             />
             <input
               tabIndex="3" type="text" name="_subject" required
               placeholder="Your Subject Line"
-              value={this.state._subject}
-              onChange={event => {this.handleChange(event, '_subject')}}
             />
             <textarea
               tabIndex="4" name="message" required
               placeholder="Your Message"
-              value={this.state.message}
-              onChange={event => {this.handleChange(event, 'message')}}
             />
             {/*This input field is a honeypot to catch spam bots -->*/}
             <input
               tabIndex="5" type="text" name="_gotcha"
               style={{ display: 'none' }}
-              value={this.state._gotcha}
-              onChange={event => {this.handleChange(event, '_gotcha')}}
             />
             <button type="submit" value="Send">Send</button>
           </form>
