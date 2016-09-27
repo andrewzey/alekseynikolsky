@@ -12,7 +12,6 @@ const propTypes = {
   })),
   activeSection: PropTypes.string,
   handleSectionClick: PropTypes.func,
-  pathname: PropTypes.string,
 };
 
 const Header = ({ sections, activeSection, handleSectionClick }) => {
