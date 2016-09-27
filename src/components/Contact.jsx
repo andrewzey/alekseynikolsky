@@ -23,7 +23,7 @@ class Contact extends Component {
 
   handleSubmit(event) {
     event.preventDefault();
-    fetch('http://formspree.io/alekseynikolsky+webcontactform@gmail.com', {
+    fetch('https://formspree.io/alekseynikolsky+webcontactform@gmail.com', {
       method: 'POST',
       headers: {
         'Accept': 'json',
