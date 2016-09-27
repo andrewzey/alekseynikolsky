@@ -16,9 +16,8 @@ import Contact from './Contact';
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      activeSection: 'Home'
-    };
+    const activeSection = (window) ? window.location.pathname : '/';
+    this.state = { activeSection };
   }
 
   handleSectionClick(sectionDisplayName) {
@@ -27,12 +26,12 @@ class App extends Component {
 
   render() {
     const sections = [
-      { displayName: 'Home', url: '', component: Home },
-      { displayName: 'Research', url: 'research', component: Research },
-      { displayName: 'Credo', url: 'credo', component: Credo },
-      { displayName: 'Compositions', url: 'compositions', component: Compositions },
-      { displayName: 'About', url: 'about', component: About },
-      { displayName: 'Contact', url: 'contact', component: Contact },
+      { displayName: 'Home', url: '/', component: Home },
+      { displayName: 'Research', url: '/research', component: Research },
+      { displayName: 'Credo', url: '/credo', component: Credo },
+      { displayName: 'Compositions', url: '/compositions', component: Compositions },
+      { displayName: 'About', url: '/about', component: About },
+      { displayName: 'Contact', url: '/contact', component: Contact },
     ];
 
     const pageSections = sections.map(section => (

@@ -12,17 +12,18 @@ const propTypes = {
   })),
   activeSection: PropTypes.string,
   handleSectionClick: PropTypes.func,
+  pathname: PropTypes.string,
 };
 
 const Header = ({ sections, activeSection, handleSectionClick }) => {
   const navItems = sections.map((section, index) => {
     const classes = classNames({
       [`${baseClass}__nav__item`]: true,
-      [`${baseClass}__nav__item--active`]: section.displayName === activeSection,
+      [`${baseClass}__nav__item--active`]: section.url === activeSection,
     });
     return (
       <li className={classes} key={index}>
-        <Link to={section.url} onClick={() => handleSectionClick(section.displayName)}>
+        <Link to={section.url} onClick={() => handleSectionClick(section.url)}>
           {section.displayName}
         </Link>
       </li>
@@ -34,7 +35,7 @@ const Header = ({ sections, activeSection, handleSectionClick }) => {
   return (
     <header>
       <div className={`${baseClass}__site-title`}>
-        <Link to={homeSection.url} onClick={() => handleSectionClick(homeSection.displayName)}>
+        <Link to={homeSection.url} onClick={() => handleSectionClick(homeSection.url)}>
           <h1>Aleksey Nikolsky</h1>
         </Link>
       </div>
