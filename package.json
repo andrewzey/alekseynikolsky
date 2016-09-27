@@ -21,6 +21,6 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": "./config/eslint.js"
+    "extends": "react-app"
   }
 }
