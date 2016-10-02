@@ -3,8 +3,8 @@ import { BrowserRouter, Match } from 'react-router';
 
 import './App.css';
 
-import Header from './Header';
-import Home from './Home';
+import Header from './Header/Header';
+import Home from './Home/Home';
 import Research from './Research';
 import Credo from './Credo';
 import Compositions from './Compositions';
@@ -20,8 +20,8 @@ class App extends Component {
     this.state = { activeSection };
   }
 
-  handleSectionClick(sectionDisplayName) {
-    this.setState({ activeSection: sectionDisplayName });
+  handleSectionClick(sectionUrl) {
+    this.setState({ activeSection: sectionUrl });
   }
 
   render() {
@@ -34,12 +34,22 @@ class App extends Component {
       { displayName: 'Contact', url: '/contact', component: Contact },
     ];
 
+    const MatchWithCallback = ({ component:Component, ...rest }) => (
+      <Match {...rest} render={(matchProps) => (
+        <Component
+          {...matchProps}
+          handleSectionClick={(sectionUrl) =>
+            this.handleSectionClick(sectionUrl)}
+        />
+      )}/>
+    );
+
     const pageSections = sections.map(section => (
-      <Match
+      <MatchWithCallback
         exactly
         pattern={section.url}
         component={section.component}
-        key={section.displayName}
+        key={section.url}
       />
     ));
 
@@ -49,8 +59,9 @@ class App extends Component {
           <Header
             sections={sections}
             activeSection={this.state.activeSection}
-            handleSectionClick={(sectionDisplayName) =>
-              this.handleSectionClick(sectionDisplayName)}/>
+            handleSectionClick={(sectionUrl) =>
+              this.handleSectionClick(sectionUrl)}
+          />
           {pageSections}
         </div>
       </BrowserRouter>

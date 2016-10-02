@@ -1,0 +1,12 @@
+.InfoBlock {
+  text-align: justify;
+  font-size: 0.9rem;
+}
+
+.InfoBlock__img {}
+
+@media only screen and (max-width: 52rem) {
+  .InfoBlock__img {
+    display: none;
+  }
+}

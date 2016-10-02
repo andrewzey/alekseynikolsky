@@ -2,6 +2,8 @@ body {
   padding: 2em;
   font-family: Helvetica, Arial;
   line-height: 1.4em;
+  max-width: 980px;
+  margin: 0 auto 0;
 }
 
 a {
@@ -16,4 +18,14 @@ a:hover {
 a:active, a:visited {
   text-decoration: none;
   color: black;
+}
+
+h3 {
+  font-family: "Poiret One";
+  font-weight: 900;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

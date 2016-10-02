@@ -1,0 +1,54 @@
+.Header__site-title {
+  font-family: "Poiret One";
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.Header__site-title a {
+  color: black;
+}
+
+.Header__site-title h1 {
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-top: 0rem;
+  padding-bottom: 1.125rem;
+}
+
+@media only screen and (max-width: 52rem) {
+  .Header__site-title h1 {
+    font-size: 2em;
+  }
+}
+
+.Header__nav {
+  text-align: center;
+  margin-bottom: 0.75rem;
+}
+
+.Header__nav__item {
+  display: inline-block;
+  font-family: "Poiret One";
+  font-weight: regular;
+  font-size: 1.25rem;
+  margin-right: 1.25rem;
+  line-height: 1.5em;
+}
+
+.Header__nav__item:last-child {
+  margin-right: 0px;
+}
+
+.Header__nav__item > a {
+  color: #555;
+}
+
+.Header__nav__item:hover {
+  border-bottom: 2px solid #AAA;
+}
+
+.Header__nav__item--active {
+  font-weight: 900;
+  border-bottom: 2px solid #AAA;
+}
