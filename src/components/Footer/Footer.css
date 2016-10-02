@@ -1,0 +1,11 @@
+footer {
+  text-align: center;
+  color: #AAA;
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-top: 1.5rem;
+}
+
+footer .design-attribution {
+  font-size: 0.75rem;
+}

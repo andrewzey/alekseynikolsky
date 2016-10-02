@@ -4,12 +4,13 @@ import { BrowserRouter, Match } from 'react-router';
 import './App.css';
 
 import Header from './Header/Header';
+import Footer from './Footer/Footer';
 import Home from './Home/Home';
 import Research from './Research';
 import Credo from './Credo';
 import Compositions from './Compositions';
 import About from './About';
-import Contact from './Contact';
+import Contact from './Contact/Contact';
 
 // const baseClass = 'App';
 
@@ -63,6 +64,7 @@ class App extends Component {
               this.handleSectionClick(sectionUrl)}
           />
           {pageSections}
+          <Footer />
         </div>
       </BrowserRouter>
     );

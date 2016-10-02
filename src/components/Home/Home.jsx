@@ -4,6 +4,7 @@ import { Flex, Box } from 'reflexbox';
 
 import InfoBlock from '../InfoBlock/InfoBlock';
 import ResponsiveImage from '../ResponsiveImage/ResponsiveImage';
+import ContactForm from '../ContactForm/ContactForm';
 
 import HeroImage from '../../images/home-hero-aleksey-18.jpg';
 import ImageResearch from '../../images/home-copenhagen-dome.jpg';
@@ -46,11 +47,15 @@ const Home = ({ pathname, handleSectionClick }) => {
   return (
     <div>
       <DocumentTitle title='Aleksey Nikolsky - Composer, Scientist' />
-      <Flex wrap>
+      <Flex wrap justify="center">
         <Box col={12} sm={12} p={2}>
           <ResponsiveImage src={HeroImage} alt="Aleksey Nikolsky on Steps of Walt Disney Hall" />
         </Box>
         {InfoBlocks}
+        <Box col={12} sm={12} lg={8} p={2}>
+          <h3>Contact Aleksey</h3>
+          <ContactForm />
+        </Box>
       </Flex>
     </div>
   );
