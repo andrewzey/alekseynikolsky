@@ -36,6 +36,10 @@
   line-height: 1.5em;
 }
 
+.Header__nav__item:hover {
+  font-weight: 900;
+}
+
 .Header__nav__item:last-child {
   margin-right: 0px;
 }

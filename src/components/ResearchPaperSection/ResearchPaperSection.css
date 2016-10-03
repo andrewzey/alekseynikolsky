@@ -1,7 +1,11 @@
 .ResearchPaperSection {
   display: block;
-  padding: 1rem;
+  margin-bottom: 2rem;
   clear: both;
+  overflow: auto;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
 }
 
 .ResearchPaperSection__thumbnail {
@@ -12,6 +16,11 @@
   margin-right: 12px;
 }
 
-.ResearchPaperSection h4:hover {
+.ResearchPaperSection__url {
   color: #3498db;
+  text-decoration: underline;
+}
+
+.ResearchPaperSection__url:hover {
+  font-weight: normal;
 }

@@ -21,8 +21,12 @@ const ResearchPaperSection = ({ title, paperUrl, imageUrl, imageAltText,
       <ResponsiveImage
         src={imageUrl}
         alt={imageAltText}
-        className={`${baseClass}__thumbnail`}/>
+        className={`${baseClass}__thumbnail`}
+      />
+    </a>
       <h4>{title}</h4>
+    <a href={paperUrl} target="_blank">
+      <p className={`${baseClass}__url`}>{paperUrl}</p>
     </a>
     <p>{description}</p>
   </div>

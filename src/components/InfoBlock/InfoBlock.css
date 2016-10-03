@@ -3,6 +3,10 @@
   font-size: 0.9rem;
 }
 
+.InfoBlock a:hover {
+  color: #3498db;
+}
+
 .InfoBlock__img {}
 
 @media only screen and (max-width: 52rem) {
