@@ -1,0 +1,17 @@
+.ResearchPaperSection {
+  display: block;
+  padding: 1rem;
+  clear: both;
+}
+
+.ResearchPaperSection__thumbnail {
+  position: relative;
+  float: left;
+  width: 125px;
+  height: 125px;
+  margin-right: 12px;
+}
+
+.ResearchPaperSection h4:hover {
+  color: #3498db;
+}

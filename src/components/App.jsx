@@ -6,13 +6,11 @@ import './App.css';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Home from './Home/Home';
-import Research from './Research';
+import Research from './Research/Research';
 import Credo from './Credo';
 import Compositions from './Compositions';
 import About from './About';
 import Contact from './Contact/Contact';
-
-// const baseClass = 'App';
 
 class App extends Component {
   constructor(props) {
