@@ -6,10 +6,10 @@ import InfoBlock from '../InfoBlock/InfoBlock';
 import ResponsiveImage from '../ResponsiveImage/ResponsiveImage';
 import ContactForm from '../ContactForm/ContactForm';
 
-import HeroImage from '../../images/home-hero-aleksey-18.jpg';
-import ImageResearch from '../../images/home-copenhagen-dome.jpg';
-import ImageCompositions from '../../images/home-inking-dancers.jpg';
-import ImageCredo from '../../images/home-school-of-athens.jpg';
+import HeroImage from '../../images/home/home-hero-aleksey-18.jpg';
+import ImageResearch from '../../images/home/home-copenhagen-dome.jpg';
+import ImageCompositions from '../../images/home/home-inking-dancers.jpg';
+import ImageCredo from '../../images/home/home-school-of-athens.jpg';
 
 const Home = ({ pathname, handleSectionClick }) => {
   const infoBlocks = [
