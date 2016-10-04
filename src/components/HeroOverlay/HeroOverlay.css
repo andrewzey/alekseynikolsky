@@ -1,26 +1,42 @@
 .HeroOverlay {
   position: absolute;
-  background-color: rgba(249,241,220,.88);
   width: 50%;
-  right: 28px;
-  bottom: 30px;
   padding: 14px;
   box-sizing: border-box;
 }
 
 .HeroOverlay p {
+  font-size: 0.9em;
   margin-bottom: .6em;
+}
+
+.HeroOverlay h3 {
+  text-align: left;
+  margin-bottom: 0.5em;
 }
 
 .HeroOverlay p:last-child {
   margin-bottom: 0;
 }
 
-/* Type-specific media queries. This is gross, as the sizing is manually
+.HeroOverlay__research {
+  right: 28px;
+  bottom: 30px;
+  background-color: rgba(249, 241, 220, .88);
+}
+
+.HeroOverlay__credo {
+  top: 30px;
+  left: 28px;
+  color: white;
+  background-color: rgba(0, 0, 0, .75);
+}
+
+/* Copy-specific media queries. This is gross, as the sizing is manually
 specified according to the content.
 TODO: fix this to be more generic */
 @media only screen and (max-width: 1015px) {
-  .HeroOverlay__research {
+  .HeroOverlay__research, .HeroOverlay__credo {
     width: 93%;
     margin: 0 auto 0;
     right: 5px;
@@ -30,7 +46,7 @@ TODO: fix this to be more generic */
 
 /*  GO FULL WIDTH BELOW 820 PIXELS */
 @media only screen and (max-width: 820px) {
-  .HeroOverlay__research {
+  .HeroOverlay__research, .HeroOverlay__credo {
     position: relative;
     width: 100%;
     margin: 16px 0 0 0;

@@ -7,7 +7,7 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Home from './Home/Home';
 import Research from './Research/Research';
-import Credo from './Credo';
+import Credo from './Credo/Credo';
 import Compositions from './Compositions';
 import About from './About';
 import Contact from './Contact/Contact';

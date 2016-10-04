@@ -7,7 +7,7 @@ const baseClass = 'HeroOverlay';
 
 const propTypes = {
   children: PropTypes.arrayOf(PropTypes.element),
-  type: PropTypes.oneOf(['research']),
+  type: PropTypes.oneOf(['research', 'credo']),
 };
 
 const HeroOverlay = ({ children, type }) => {
