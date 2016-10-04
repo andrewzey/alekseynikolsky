@@ -4,6 +4,8 @@ import { Flex, Box } from 'reflexbox';
 
 import './Research.css';
 
+import { RESPONSIVE_IMAGE_MAX_HEIGHT_HERO } from '../../constants';
+
 import ResearchPaperSection from '../ResearchPaperSection/ResearchPaperSection';
 import ResponsiveImage from '../ResponsiveImage/ResponsiveImage';
 import HeroOverlay from '../HeroOverlay/HeroOverlay';
@@ -24,7 +26,11 @@ const Research = ({ pathname }) => {
       <DocumentTitle title='Aleksey Nikolsky - Research'></DocumentTitle>
       <Flex wrap justify="center">
         <Box col={12} sm={12} p={2} style={{position: 'relative'}}>
-          <ResponsiveImage src={HeroImage} alt="Library filled with Books" />
+          <ResponsiveImage
+            src={HeroImage}
+            alt="Library filled with Books"
+            maxHeight={RESPONSIVE_IMAGE_MAX_HEIGHT_HERO}
+          />
           <HeroOverlay type="research">
             <h3>Research</h3>
             <p>The area of research that immediately contributes to my work is in developmental epistemology of music, emotion in music, perception of tonal organization in music, musical synesthesia, and perception of rhythm, meter, and tempo.</p>

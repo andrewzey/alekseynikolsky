@@ -2,6 +2,8 @@ import React, { PropTypes } from 'react';
 import DocumentTitle from 'react-document-title';
 import { Flex, Box } from 'reflexbox';
 
+import { RESPONSIVE_IMAGE_MAX_HEIGHT_HERO } from '../../constants'
+
 import InfoBlock from '../InfoBlock/InfoBlock';
 import ResponsiveImage from '../ResponsiveImage/ResponsiveImage';
 import ContactForm from '../ContactForm/ContactForm';
@@ -49,7 +51,11 @@ const Home = ({ pathname, handleSectionClick }) => {
       <DocumentTitle title='Aleksey Nikolsky - Composer, Scientist' />
       <Flex wrap justify="center">
         <Box col={12} sm={12} p={2}>
-          <ResponsiveImage src={HeroImage} alt="Aleksey Nikolsky on Steps of Walt Disney Hall" />
+          <ResponsiveImage
+            src={HeroImage}
+            alt="Aleksey Nikolsky on Steps of Walt Disney Hall"
+            maxHeight={RESPONSIVE_IMAGE_MAX_HEIGHT_HERO}
+          />
         </Box>
         {InfoBlocks}
         <Box col={12} sm={12} lg={8} p={2}>

@@ -2,8 +2,6 @@ import React, { PropTypes } from 'react';
 
 import './ResearchPaperSection.css';
 
-import ResponsiveImage from '../ResponsiveImage/ResponsiveImage';
-
 const baseClass = 'ResearchPaperSection';
 
 const propTypes = {
@@ -18,7 +16,7 @@ const ResearchPaperSection = ({ title, paperUrl, imageUrl, imageAltText,
   description}) => {
   return <div className="ResearchPaperSection">
     <a href={paperUrl} target="_blank">
-      <ResponsiveImage
+      <img
         src={imageUrl}
         alt={imageAltText}
         className={`${baseClass}__thumbnail`}

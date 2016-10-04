@@ -4,6 +4,8 @@ import { Box } from 'reflexbox';
 
 import './InfoBlock.css';
 
+import { RESPONSIVE_IMAGE_MAX_HEIGHT_INFO_BLOCK } from '../../constants';
+
 import ResponsiveImage from '../ResponsiveImage/ResponsiveImage';
 
 const baseClass = 'InfoBlock';
@@ -30,6 +32,7 @@ const InfoBlock = ({ title, pageUrl, handleSectionClick,
           src={imageUrl}
           alt={imageAltText}
           className={`${baseClass}__img`}
+          maxHeight={RESPONSIVE_IMAGE_MAX_HEIGHT_INFO_BLOCK}
         />
         <h3>{title}</h3>
       </Link>
