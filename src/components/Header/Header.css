@@ -34,6 +34,8 @@
   font-size: 1.25rem;
   margin-right: 1.25rem;
   line-height: 1.5em;
+  box-sizing: border-box;
+  height: 1.5em;
 }
 
 .Header__nav__item:hover {
