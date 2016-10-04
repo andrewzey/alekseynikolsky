@@ -4,7 +4,7 @@ import { Flex, Box } from 'reflexbox';
 
 import './Research.css';
 
-import { RESPONSIVE_IMAGE_MAX_HEIGHT_HERO } from '../../constants';
+import { IMAGE_HEIGHT_WIDTH_RATIO_HERO } from '../../constants';
 
 import ResearchPaperSection from '../ResearchPaperSection/ResearchPaperSection';
 import ResponsiveImage from '../ResponsiveImage/ResponsiveImage';
@@ -29,7 +29,7 @@ const Research = ({ pathname }) => {
           <ResponsiveImage
             src={HeroImage}
             alt="Library filled with Books"
-            maxHeight={RESPONSIVE_IMAGE_MAX_HEIGHT_HERO}
+            heightWidthRatio={IMAGE_HEIGHT_WIDTH_RATIO_HERO}
           />
           <HeroOverlay type="research">
             <h3>Research</h3>

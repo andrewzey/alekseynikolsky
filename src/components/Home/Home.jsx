@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import DocumentTitle from 'react-document-title';
 import { Flex, Box } from 'reflexbox';
 
-import { RESPONSIVE_IMAGE_MAX_HEIGHT_HERO } from '../../constants'
+import { IMAGE_HEIGHT_WIDTH_RATIO_HERO } from '../../constants'
 
 import InfoBlock from '../InfoBlock/InfoBlock';
 import ResponsiveImage from '../ResponsiveImage/ResponsiveImage';
@@ -54,7 +54,7 @@ const Home = ({ pathname, handleSectionClick }) => {
           <ResponsiveImage
             src={HeroImage}
             alt="Aleksey Nikolsky on Steps of Walt Disney Hall"
-            maxHeight={RESPONSIVE_IMAGE_MAX_HEIGHT_HERO}
+            heightWidthRatio={IMAGE_HEIGHT_WIDTH_RATIO_HERO}
           />
         </Box>
         {InfoBlocks}
