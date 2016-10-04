@@ -9,7 +9,7 @@ import { RESPONSIVE_IMAGE_MAX_HEIGHT_HERO } from '../../constants';
 import ResearchPaperSection from '../ResearchPaperSection/ResearchPaperSection';
 import ResponsiveImage from '../ResponsiveImage/ResponsiveImage';
 import HeroOverlay from '../HeroOverlay/HeroOverlay';
-import HeroImage from '../../images/research-hero.jpg'
+import HeroImage from '../../images/research/research-hero.jpg'
 import ResearchPapers from './ResearchPapers.json';
 
 const propTypes = {
