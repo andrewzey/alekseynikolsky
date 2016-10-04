@@ -3,7 +3,7 @@
   background-color: rgba(249,241,220,.88);
   width: 50%;
   right: 28px;
-  bottom: 35px;
+  bottom: 30px;
   padding: 14px;
   box-sizing: border-box;
 }
@@ -12,10 +12,14 @@
   margin-bottom: .6em;
 }
 
+.HeroOverlay p:last-child {
+  margin-bottom: 0;
+}
+
 /* Type-specific media queries. This is gross, as the sizing is manually
 specified according to the content.
 TODO: fix this to be more generic */
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1050px) {
   .HeroOverlay__research {
     width: 93%;
     margin: 0 auto 0;

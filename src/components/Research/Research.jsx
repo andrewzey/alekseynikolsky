@@ -33,10 +33,9 @@ const Research = ({ pathname }) => {
           />
           <HeroOverlay type="research">
             <h3>Research</h3>
-            <p>The area of research that immediately contributes to my work is in developmental epistemology of music, emotion in music, perception of tonal organization in music, musical synesthesia, and perception of rhythm, meter, and tempo.</p>
-            <p>However, I have always been interested in laying out a comprehensive theory of general music semiotics, similar to "general linguistics" by Ferdinand de Saussure, that would integrate the data coming from history of Western music, comparative ethnomusicology, sociology of music, and cognitive sciences, in order to establish such features of communication that are typical for all types of music.</p>
-            <p>More recently, I started looking into the issue of globalization of music and the current state of music industry. This led me to the investigation of the histor of popular music, history of folk music, and history od development of the music market.</p>
-            <p>TODO: GET SHORTER VERSION FROM ALEKSEY</p>
+            <p>The area of research that immediately contributes to my work is in developmental epistemology of music, emotion, perception of tonal organization, musical synesthesia and prosody. However, I have always been interested in laying out a comprehensive theory of general music semiotics, similar to “general linguistics” by Ferdinand de Saussure, which would apply to all forms of music.</p>
+            <p>More recently my attention went into investigating the history of popular music, history of so-called “folk music,” and history of development of the music market – in quest to understand whether the state of music today is an aberration of biomusicological “norm” or an organic historic development that only seems to decline in its capacity to communicate information from creator of music to its listener.</p>
+            <p>It was in 2013 that I decided to start publishing some of my findings and looking for their critical evaluation. I believe that integration of many disciplines would allow to disclose the formative role that music has played in the cognitive development of humanity.</p>
           </HeroOverlay>
         </Box>
         <Box col={12} sm={12} p={2}>
