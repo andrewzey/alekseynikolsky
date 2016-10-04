@@ -1,0 +1,55 @@
+.Credo p {
+  margin-bottom: 1rem;
+}
+
+.Credo ol {
+  list-style-position: outside;
+  margin: 0 3.75rem;
+}
+
+.Credo ol li {
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+.Credo__img {
+  padding-bottom: 0.5rem;
+}
+
+.Credo__img--left {
+  float: left;
+  padding-right: 1rem;
+}
+
+.Credo__img--right {
+  float: right;
+  padding-left: 1rem;
+}
+
+.Credo__img--portrait {
+  max-width: 200px;
+}
+
+.Credo__img--landscape {
+  max-width: 300px;
+}
+
+@media only screen and (max-width: 42rem) {
+  .Credo__img {
+    display: block;
+    text-align: center;
+    float: none;
+    max-width: 100%;
+    padding: 0.25rem 0 1rem 0;
+  }
+
+  .Credo ol {
+    list-style-position: outside;
+    margin: 0 2rem;
+  }
+
+  .Credo ol li {
+    padding-left: 0.75rem;
+    margin-bottom: 0.75rem;
+  }
+}
