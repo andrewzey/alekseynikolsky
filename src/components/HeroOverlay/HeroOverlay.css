@@ -19,7 +19,7 @@
 /* Type-specific media queries. This is gross, as the sizing is manually
 specified according to the content.
 TODO: fix this to be more generic */
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1015px) {
   .HeroOverlay__research {
     width: 93%;
     margin: 0 auto 0;
