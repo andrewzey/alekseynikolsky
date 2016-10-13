@@ -45,11 +45,11 @@ const About = ({ pathname }) => {
               <Box col={12} sm={6} md={12} p={1}>
                 <div>
                   <SummarySectionHeader>Education</SummarySectionHeader>
-                  <SummarySectionTitle>Ph.D. Composition &amp; Music Theory</SummarySectionTitle>
+                  <SummarySectionTitle>Doctorate in Composition &amp; Music Theory</SummarySectionTitle>
                   <SummarySectionDetail>Moscow State Tchaikovsky Conservatory, 1989</SummarySectionDetail>
                   <SummarySectionDetail>Honors: Maxima Cum Laude (4.0 GPA)</SummarySectionDetail>
 
-                  <SummarySectionTitle>Masters in Pedagogy, Music Theory, Piano</SummarySectionTitle>
+                  <SummarySectionTitle>Masters in Music Theory</SummarySectionTitle>
                   <SummarySectionDetail>Moscow Schnittke Institute of Music, 1982</SummarySectionDetail>
                   <SummarySectionDetail>Honors: Maxima Cum Laude (4.0 GPA)</SummarySectionDetail>
                 </div>
@@ -65,7 +65,7 @@ const About = ({ pathname }) => {
 
                 <div>
                   <SummarySectionHeader>Specialties</SummarySectionHeader>
-                  <SummarySectionDetail>Advanced Piano, Music Composition, Orchestration &amp; Instrumentation, Sequencing &amp; Audio Mastering</SummarySectionDetail>
+                  <SummarySectionDetail>Music Composition, Music Education, Music Theory, Musical Analysis, Pedagogic Theory, Semiotics of Music, Ethnomusicology, Systematic Musicology, Audio Engineering, Music Psychology</SummarySectionDetail>
                 </div>
               </Box>
             </Flex>

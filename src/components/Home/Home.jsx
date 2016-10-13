@@ -57,7 +57,7 @@ const Home = ({ pathname, handleSectionClick }) => {
             heightWidthRatio={IMAGE_HEIGHT_WIDTH_RATIO_HERO}
           />
         </Box>
-        <Box col={12} sm={12} p={2}>
+        <Box col={12} sm={12} md={9} p={2} justify="center">
           <div className="credo">
             <h3>Credo</h3>
             <p>In the Beginning there was Music.</p>

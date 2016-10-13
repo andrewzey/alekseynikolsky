@@ -32,7 +32,7 @@
 
 .About__summary__title {
   font-weight: bold;
-  margin-left: 1rem;
+  margin-left: 9px;
   margin-top: 1rem;
 }
 
@@ -43,13 +43,10 @@
 .About__summary__detail {
   font-style: italic;
   line-height: 1rem;
-  margin-left: 1rem;
+  margin-left: 9px;
 }
 
 .About__summary__detail:last-of-type {
-  font-style: italic;
-  line-height: 1rem;
-  margin-left: 1rem;
   margin-bottom: 1rem;
 }
 
