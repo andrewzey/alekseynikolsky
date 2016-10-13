@@ -9,7 +9,7 @@ import Home from './Home/Home';
 import Research from './Research/Research';
 import Statement from './Statement/Statement';
 import Compositions from './Compositions';
-import About from './About';
+import About from './About/About';
 import Contact from './Contact/Contact';
 
 class App extends Component {
