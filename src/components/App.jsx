@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Match } from 'react-router';
+import ReactGA from 'react-ga';
 
 import './App.css';
 
@@ -12,15 +13,27 @@ import Compositions from './Compositions';
 import About from './About/About';
 import Contact from './Contact/Contact';
 
+function logPageView() {
+  if (window.location.host === "alekseynikolsky.com" ||
+      window.location.host === "www.alekseynikolsky.com") {
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname);
+  }
+}
+
 class App extends Component {
   constructor(props) {
     super(props);
     const activeSection = (window) ? window.location.pathname : '/';
     this.state = { activeSection };
+    ReactGA.initialize('UA-31358068-3');
+    logPageView();
   }
 
   handleSectionClick(sectionUrl) {
     this.setState({ activeSection: sectionUrl });
+    // Ensure that window.location.pathname is updated before logging page view
+    setTimeout(()=>logPageView(),0);
   }
 
   render() {
