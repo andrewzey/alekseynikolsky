@@ -25,7 +25,7 @@
   background-color: rgba(249, 241, 220, .88);
 }
 
-.HeroOverlay__credo {
+.HeroOverlay__statement {
   top: 30px;
   left: 28px;
   color: white;
@@ -36,7 +36,7 @@
 specified according to the content.
 TODO: fix this to be more generic */
 @media only screen and (max-width: 1015px) {
-  .HeroOverlay__research, .HeroOverlay__credo {
+  .HeroOverlay__research, .HeroOverlay__statement {
     width: 93%;
     margin: 0 auto 0;
     right: 5px;
@@ -46,7 +46,7 @@ TODO: fix this to be more generic */
 
 /*  GO FULL WIDTH fOR MOBILE BREAKPOINT*/
 @media only screen and (max-width: 52rem) {
-  .HeroOverlay__research, .HeroOverlay__credo {
+  .HeroOverlay__research, .HeroOverlay__statement {
     position: relative;
     width: 100%;
     margin: 16px 0 0 0;

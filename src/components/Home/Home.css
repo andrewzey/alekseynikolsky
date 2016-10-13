@@ -1,0 +1,8 @@
+.credo p {
+  padding-bottom: 1em;
+}
+
+.credo__signature {
+  font-weight: bold;
+  text-align: center;
+}

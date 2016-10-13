@@ -7,7 +7,7 @@ import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Home from './Home/Home';
 import Research from './Research/Research';
-import Credo from './Credo/Credo';
+import Statement from './Statement/Statement';
 import Compositions from './Compositions';
 import About from './About';
 import Contact from './Contact/Contact';
@@ -26,9 +26,11 @@ class App extends Component {
   render() {
     const sections = [
       { displayName: 'Home', url: '/', component: Home },
-      { displayName: 'Research', url: '/research', component: Research },
-      { displayName: 'Credo', url: '/credo', component: Credo },
+      { displayName: 'Statement', url: '/statement', component: Statement },
       { displayName: 'Compositions', url: '/compositions', component: Compositions },
+      { displayName: 'Research', url: '/research', component: Research },
+      // TODO: after initial launch of website
+      // { displayName: 'Method', url: '/method', component: Research },
       { displayName: 'About', url: '/about', component: About },
       { displayName: 'Contact', url: '/contact', component: Contact },
     ];
