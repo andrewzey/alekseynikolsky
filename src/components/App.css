@@ -19,9 +19,18 @@ a:active, a:visited {
 h3 {
   font-family: "Poiret One";
   font-weight: 900;
-  font-size: 22px;
+  font-size: 1.375rem;
   text-align: center;
   text-transform: uppercase;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+h4 {
+  font-family: "Poiret One";
+  font-weight: 900;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }

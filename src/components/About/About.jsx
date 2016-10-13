@@ -72,6 +72,7 @@ const About = ({ pathname }) => {
           </div>
         </Box>
         <Box col={12} sm={12} md={8} p={2}>
+        <div className={`${baseClass}__bio`}>
           <p>My life has been a unique combination of deep study of music and many other disciplines, as well as creation of various educational music programs.</p>
 
           <h4>My Early Music Education</h4>
@@ -123,6 +124,7 @@ const About = ({ pathname }) => {
           http://www.mozartinshape.org/images/photos/bios/alekseyinstudy.jpg*/}
 
           <p>Currently, I am working toward completing 3 books: one, on the subject of semiotics that would describe the organization of music as a semiotic system designed to convey emotions; the second, on the evolution of tonal organization in music; and the third, on the interplay of music and politics during the 20th century, and its impact on the music industry.</p>
+          </div>
         </Box>
       </Flex>
     </div>

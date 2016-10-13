@@ -22,7 +22,7 @@ const ResearchPaperSection = ({ title, paperUrl, imageUrl, imageAltText,
         className={`${baseClass}__thumbnail`}
       />
     </a>
-      <h4>{title}</h4>
+      <h5>{title}</h5>
     <a href={paperUrl} target="_blank">
       <p className={`${baseClass}__url`}>{paperUrl}</p>
     </a>
