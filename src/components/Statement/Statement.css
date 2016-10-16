@@ -2,53 +2,23 @@
   margin-bottom: 1rem;
 }
 
-.Statement ol {
+.Statement ul {
   list-style-position: outside;
   margin: 0 3.75rem;
 }
 
-.Statement ol li {
+.Statement ul li {
   padding-left: 1rem;
   margin-bottom: 1rem;
 }
 
-.Statement__img {
-  padding-bottom: 0.5rem;
-}
-
-.Statement__img--left {
-  float: left;
-  padding-right: 1rem;
-}
-
-.Statement__img--right {
-  float: right;
-  padding-left: 1rem;
-}
-
-.Statement__img--portrait {
-  max-width: 200px;
-}
-
-.Statement__img--landscape {
-  max-width: 300px;
-}
-
 @media only screen and (max-width: 42rem) {
-  .Statement__img {
-    display: block;
-    text-align: center;
-    float: none;
-    max-width: 100%;
-    padding: 0.25rem 0 1rem 0;
-  }
-
-  .Statement ol {
+  .Statement ul {
     list-style-position: outside;
     margin: 0 2rem;
   }
 
-  .Statement ol li {
+  .Statement ul li {
     padding-left: 0.75rem;
     margin-bottom: 0.75rem;
   }
