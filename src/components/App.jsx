@@ -32,6 +32,7 @@ class App extends Component {
 
   handleSectionClick(sectionUrl) {
     this.setState({ activeSection: sectionUrl });
+    window.scrollTo(0, 0);
     // Ensure that window.location.pathname is updated before logging page view
     setTimeout(()=>logPageView(),0);
   }
