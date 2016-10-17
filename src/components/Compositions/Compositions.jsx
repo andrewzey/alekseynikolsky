@@ -1,8 +1,7 @@
 import React, { PropTypes } from 'react';
 import DocumentTitle from 'react-document-title';
-// import { Match } from 'react-router';
-// import { Flex, Box } from 'reflexbox';
 import MatchWithCallback from '../MatchWithCallback/MatchWithCallback';
+// import { Flex, Box } from 'reflexbox';
 
 import Navigation from '../Navigation/Navigation';
 

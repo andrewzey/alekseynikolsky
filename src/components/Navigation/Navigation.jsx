@@ -48,7 +48,7 @@ const Navigation = ({
 
   // TODO: make something more elegant for creating space under the background
   // that is position absolute to span the entire viewport width
-  const backgroundHack = (hasBackground && bgColor)
+  const backgroundClearDivHack = (hasBackground && bgColor)
     ? <div style={{height: '65px'}}></div> : null;
 
   return (
@@ -58,7 +58,7 @@ const Navigation = ({
           {navItems}
         </ul>
       </nav>
-      {backgroundHack}
+      {backgroundClearDivHack}
     </div>
   );
 };

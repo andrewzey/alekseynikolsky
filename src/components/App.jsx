@@ -44,7 +44,6 @@ class App extends Component {
       { displayName: 'Statement', url: '/statement', component: Statement },
       { displayName: 'Compositions', url: '/compositions', component: Compositions },
       { displayName: 'Research', url: '/research', component: Research },
-      // TODO: after initial launch of website
       { displayName: 'Method', url: '/method', component: ComingSoon },
       { displayName: 'About', url: '/about', component: About },
       { displayName: 'Contact', url: '/contact', component: Contact },
