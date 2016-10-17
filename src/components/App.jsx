@@ -1,3 +1,5 @@
+import 'babel-polyfill';
+
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router';
 import MatchWithCallback from './MatchWithCallback/MatchWithCallback';
