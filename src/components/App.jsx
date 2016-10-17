@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { BrowserRouter, Match } from 'react-router';
+import { BrowserRouter } from 'react-router';
+import MatchWithCallback from './MatchWithCallback/MatchWithCallback';
 import ReactGA from 'react-ga';
 
 import './App.css';
@@ -9,32 +10,29 @@ import Footer from './Footer/Footer';
 import Home from './Home/Home';
 import Research from './Research/Research';
 import Statement from './Statement/Statement';
-import Compositions from './Compositions';
+import Compositions from './Compositions/Compositions';
 import About from './About/About';
 import Contact from './Contact/Contact';
-
-function logPageView() {
-  if (window.location.host === "alekseynikolsky.com" ||
-      window.location.host === "www.alekseynikolsky.com") {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
-  }
-}
 
 class App extends Component {
   constructor(props) {
     super(props);
-    const activeSection = (window) ? window.location.pathname : '/';
-    this.state = { activeSection };
     ReactGA.initialize('UA-31358068-3');
-    logPageView();
+    this.logPageView();
   }
 
-  handleSectionClick(sectionUrl) {
-    this.setState({ activeSection: sectionUrl });
+  logPageView() {
+    if (window.location.host === "alekseynikolsky.com" ||
+        window.location.host === "www.alekseynikolsky.com") {
+      ReactGA.set({ page: window.location.pathname });
+      ReactGA.pageview(window.location.pathname);
+    }
+  }
+
+  handleRoutingClick(sectionUrl) {
     window.scrollTo(0, 0);
     // Ensure that window.location.pathname is updated before logging page view
-    setTimeout(()=>logPageView(),0);
+    setTimeout(() => this.logPageView(), 0);
   }
 
   render() {
@@ -49,33 +47,25 @@ class App extends Component {
       { displayName: 'Contact', url: '/contact', component: Contact },
     ];
 
-    const MatchWithCallback = ({ component:Component, ...rest }) => (
-      <Match {...rest} render={(matchProps) => (
-        <Component
-          {...matchProps}
-          handleSectionClick={(sectionUrl) =>
-            this.handleSectionClick(sectionUrl)}
+    const pageSections = sections.map(section => {
+      const shouldMatchExactly = (section.url === '/');
+      return (
+        <MatchWithCallback
+          exactly={shouldMatchExactly}
+          pattern={section.url}
+          component={section.component}
+          callback={() => this.handleRoutingClick()}
+          key={section.url}
         />
-      )}/>
-    );
-
-    const pageSections = sections.map(section => (
-      <MatchWithCallback
-        exactly
-        pattern={section.url}
-        component={section.component}
-        key={section.url}
-      />
-    ));
+      );
+    });
 
     return (
       <BrowserRouter>
         <div>
           <Header
             sections={sections}
-            activeSection={this.state.activeSection}
-            handleSectionClick={(sectionUrl) =>
-              this.handleSectionClick(sectionUrl)}
+            handleSectionClick={() => this.handleRoutingClick()}
           />
           {pageSections}
           <Footer />

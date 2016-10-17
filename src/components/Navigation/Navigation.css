@@ -1,0 +1,46 @@
+.Navigation__bg--gray {
+  position: absolute;
+  padding: 0.75rem 0 0 0;
+  left: 0;
+  width:100vw;
+  background-color: #eee;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.Navigation__nav {
+  text-align: center;
+  padding-bottom: 0.75rem;
+}
+
+.Navigation__nav__item {
+  display: inline-block;
+  font-family: "Poiret One";
+  font-weight: regular;
+  font-size: 1.25rem;
+  margin-right: 1.25rem;
+  line-height: 1.5em;
+  box-sizing: border-box;
+  height: 1.5em;
+}
+
+.Navigation__nav__item:hover {
+  font-weight: 900;
+}
+
+.Navigation__nav__item:last-child {
+  margin-right: 0px;
+}
+
+.Navigation__nav__item__link  {
+  color: #555;
+}
+
+.Navigation__nav__item__link:hover {
+  border-bottom: 2px solid #AAA;
+}
+
+.Navigation__nav__item__link--active {
+  font-weight: 900;
+  border-bottom: 2px solid #AAA;
+}
