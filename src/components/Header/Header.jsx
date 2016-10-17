@@ -17,7 +17,6 @@ const propTypes = {
 
 const Header = ({ sections, handleSectionClick }) => {
   const homeSection = sections.find(section => section.displayName = 'Home');
-
   return (
     <header>
       <div className={`${baseClass}__site-title`}>

@@ -7,6 +7,8 @@ import ReactGA from 'react-ga';
 
 import './App.css';
 
+import ComingSoon from './ComingSoon/ComingSoon';
+
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 import Home from './Home/Home';
@@ -17,12 +19,6 @@ import About from './About/About';
 import Contact from './Contact/Contact';
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    ReactGA.initialize('UA-31358068-3');
-    this.logPageView();
-  }
-
   logPageView() {
     if (window.location.host === "alekseynikolsky.com" ||
         window.location.host === "www.alekseynikolsky.com") {
@@ -37,6 +33,11 @@ class App extends Component {
     setTimeout(() => this.logPageView(), 0);
   }
 
+  componentDidMount() {
+    ReactGA.initialize('UA-31358068-3');
+    this.logPageView();
+  }
+
   render() {
     const sections = [
       { displayName: 'Home', url: '/', component: Home },
@@ -44,7 +45,7 @@ class App extends Component {
       { displayName: 'Compositions', url: '/compositions', component: Compositions },
       { displayName: 'Research', url: '/research', component: Research },
       // TODO: after initial launch of website
-      // { displayName: 'Method', url: '/method', component: Research },
+      { displayName: 'Method', url: '/method', component: ComingSoon },
       { displayName: 'About', url: '/about', component: About },
       { displayName: 'Contact', url: '/contact', component: Contact },
     ];

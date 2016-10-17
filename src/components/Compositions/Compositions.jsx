@@ -6,6 +6,8 @@ import MatchWithCallback from '../MatchWithCallback/MatchWithCallback';
 
 import Navigation from '../Navigation/Navigation';
 
+import ComingSoon from '../ComingSoon/ComingSoon';
+
 const propTypes = {
   pathname: PropTypes.string,
   handleClick: PropTypes.func,
@@ -19,6 +21,7 @@ const Compositions = ({ pathname, handleClick }) => {
   const subSections = [
     { displayName: 'Orchestral', url: 'orchestral', component: Orchestral },
     { displayName: 'Chamber', url: 'chamber', component: Chamber },
+    { displayName: 'Fabulusions', url: 'fabulusions', component: ComingSoon },
     { displayName: 'Scores', url: 'scores', component: Scores },
   ];
   const subSectionComponents = subSections.map(section => (
