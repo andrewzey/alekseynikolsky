@@ -24,10 +24,6 @@
   height: 1.5em;
 }
 
-.no-touch .Navigation__nav__item:hover {
-  font-weight: 900;
-}
-
 .Navigation__nav__item:last-child {
   margin-right: 0px;
 }
@@ -41,6 +37,5 @@
 }
 
 .Navigation__nav__item__link--active {
-  font-weight: 900;
-  border-bottom: 2px solid #AAA;
+  border-bottom: 1px solid #AAA;
 }
