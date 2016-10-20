@@ -13,7 +13,7 @@ import ImageResearch from '../../images/home/home-copenhagen-dome.jpg';
 import ImageCompositions from '../../images/home/home-inking-dancers.jpg';
 import ImageCredo from '../../images/home/home-school-of-athens.jpg';
 
-const Home = ({ pathname, handleSectionClick }) => {
+const Home = ({ pathname, handleClick }) => {
   const infoBlocks = [
     {
       title: 'Statement of Purpose',
@@ -41,7 +41,7 @@ const Home = ({ pathname, handleSectionClick }) => {
   const InfoBlocks = infoBlocks.map((infoBlock, index) =>
     <InfoBlock
       {...infoBlock}
-      handleSectionClick={handleSectionClick}
+      handleSectionClick={handleClick}
       key={index}
     />
   );
