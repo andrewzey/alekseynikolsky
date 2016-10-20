@@ -36,6 +36,12 @@ class App extends Component {
   componentDidMount() {
     ReactGA.initialize('UA-31358068-3');
     this.logPageView();
+
+    // Add 'no-touch' class so we can define hover effects in CSS *only* for
+    // devices that don't support touch.
+    if (!("ontouchstart" in document.documentElement)) {
+      document.documentElement.className += "no-touch";
+    }
   }
 
   render() {

@@ -24,7 +24,7 @@
   height: 1.5em;
 }
 
-.Navigation__nav__item:hover {
+.no-touch .Navigation__nav__item:hover {
   font-weight: 900;
 }
 
@@ -36,7 +36,7 @@
   color: #555;
 }
 
-.Navigation__nav__item__link:hover {
+.no-touch .Navigation__nav__item__link:hover {
   border-bottom: 2px solid #AAA;
 }
 
