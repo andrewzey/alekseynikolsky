@@ -4,6 +4,8 @@ body {
   line-height: 1.4em;
   max-width: 980px;
   margin: 0 auto 0;
+  /* Get rid of horizontal scrollbar because some elements use width: 100vw */
+  overflow-x: hidden;
 }
 
 a {
