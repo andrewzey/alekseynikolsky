@@ -2,7 +2,7 @@
   display: block;
   margin-bottom: 2rem;
   clear: both;
-  overflow: auto;
+  overflow: hidden;
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
