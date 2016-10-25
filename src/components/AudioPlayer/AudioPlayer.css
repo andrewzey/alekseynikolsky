@@ -1,3 +1,35 @@
 .audio_player {
   position: relative;
 }
+
+.audio_player .audio_info_marquee {
+  visibility: hidden;
+}
+
+.audio_player .audio_time_progress {
+  font-size: 1rem;
+}
+
+.audio_player .audio_button {
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.audio_player .skip_button .right_facing_triangle {
+  border-left: 12px solid #fff;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
+
+.audio_player .play_pause_button .play_pause_inner {
+  height: 24px;
+  width: 24px;
+}
+
+.audio_player .play_pause_button .triangle_1, .audio_player .play_pause_button .triangle_2 {
+  border-right: 24px solid #333;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+}
