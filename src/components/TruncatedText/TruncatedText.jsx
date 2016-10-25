@@ -90,9 +90,10 @@ class TruncatedText extends React.Component {
     // Mutate the DOM on the next tick, so we can pick up mounted/unmounting
     // React nodes.
     if (wrapper) {
+      const descenderPadding = 6;
       // If there's no height set already, we can't transition. Set one.
       if (!wrapper.style.height) {
-        wrapper.style.height = `${wrapper.clientHeight}px`;
+        wrapper.style.height = `${wrapper.clientHeight + descenderPadding}px`;
       }
       setTimeout(() => {
         // Get the height of the DOM node that is entering.
@@ -100,7 +101,7 @@ class TruncatedText extends React.Component {
         const height = entering.offsetHeight;
 
         // Set the height of the wrapper to the entering DOM node.
-        wrapper.style.height = `${height}px`;
+        wrapper.style.height = `${height + descenderPadding}px`;
       }, 0);
     }
   }
