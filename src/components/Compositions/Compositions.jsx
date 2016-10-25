@@ -1,19 +1,72 @@
 import React, { PropTypes } from 'react';
 import DocumentTitle from 'react-document-title';
 import MatchWithCallback from '../MatchWithCallback/MatchWithCallback';
-// import { Flex, Box } from 'reflexbox';
 
 import Navigation from '../Navigation/Navigation';
-
 import ComingSoon from '../ComingSoon/ComingSoon';
+import CompositionRow from '../CompositionRow/CompositionRow';
+
+// Import JSON data
+import CompositionsOrchestral from './CompositionsOrchestral.json';
+import CompositionsChamber from './CompositionsChamber.json';
 
 const propTypes = {
   pathname: PropTypes.string,
   handleClick: PropTypes.func,
 };
 
-const Orchestral = () => <div>Orchestral</div>;
-const Chamber = () => <div>Chamber</div>;
+// TODO: make it DRY!!!
+
+const Orchestral = () => {
+  const OrchestralCompositions = CompositionsOrchestral.map((composition, index) => {
+    const subtitles = composition.pieceSubtitles.split('\n');
+    return (
+      <CompositionRow
+        mediaType={composition.mediaType}
+        mediaUrl={composition.mediaUrl}
+        mediaDisplayName={`${composition.pieceTitle} - ${composition.pieceYear}`}
+        imgUrl={composition.imgUrl}
+        imgAltText={composition.imgAltText}
+        pieceTitle={composition.pieceTitle}
+        pieceYear={composition.pieceYear}
+        pieceSubtitles={subtitles}
+        pieceDescription={composition.pieceDescription}
+        key={index}
+      />
+    );
+  });
+  return (
+    <div>
+      {OrchestralCompositions}
+    </div>
+  );
+};
+
+const Chamber = () => {
+  const ChamberCompositions = CompositionsChamber.map((composition, index) => {
+    const subtitles = composition.pieceSubtitles.split('\n');
+    return (
+      <CompositionRow
+        mediaType={composition.mediaType}
+        mediaUrl={composition.mediaUrl}
+        mediaDisplayName={`${composition.pieceTitle} - ${composition.pieceYear}`}
+        imgUrl={composition.imgUrl}
+        imgAltText={composition.imgAltText}
+        pieceTitle={composition.pieceTitle}
+        pieceYear={composition.pieceYear}
+        pieceSubtitles={subtitles}
+        pieceDescription={composition.pieceDescription}
+        key={index}
+      />
+    );
+  });
+  return (
+    <div>
+      {ChamberCompositions}
+    </div>
+  );
+};
+
 const Scores = () => <div>Scores</div>;
 
 const Compositions = ({ pathname, handleClick }) => {
