@@ -1,11 +1,9 @@
-import React from 'react';
+import React, { PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import classnames from 'classnames';
 
 import './TruncatedText.css';
-
-const { string, bool, number, func, array, oneOfType } = React.PropTypes;
 
 /**
  * Truncate text.
@@ -27,17 +25,17 @@ function truncate(text = '', length = 0) {
 const baseClass = 'truncated-text';
 
 const propTypes = {
-  className: oneOfType([string, array]),
-  expandable: bool,
-  length: number.isRequired,
-  lessLinkText: string,
-  moreLinkText: string,
-  onClickMoreLink: func,
-  onClickLessLink: func,
-  text: string.isRequired,
-  title: string,
-  titleSeparator: string,
-  preventDefaultOnExpand: bool,
+  className: PropTypes.oneOfType([PropTypes.string, PropTypes.array]),
+  expandable: PropTypes.bool,
+  length: PropTypes.number.isRequired,
+  lessLinkText: PropTypes.string,
+  moreLinkText: PropTypes.string,
+  onClickMoreLink: PropTypes.func,
+  onClickLessLink: PropTypes.func,
+  text: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  titleSeparator: PropTypes.string,
+  preventDefaultOnExpand: PropTypes.bool,
 };
 
 const defaultProps = {
@@ -52,17 +50,7 @@ const defaultProps = {
   preventDefaultOnExpand: false,
 };
 
-/**
- * Truncated text component.
- * @class
- */
 class TruncatedText extends React.Component {
-  /**
-   * Constructor.
-   * @constructor
-   *
-   * @param {object} [props] - Props.
-   */
   constructor(props) {
     super(props);
 
@@ -82,9 +70,6 @@ class TruncatedText extends React.Component {
     window.removeEventListener('resize', this.updateHeight.bind(this));
   }
 
-  /**
-   *  Update height of wrapper to fit new text.
-   */
   updateHeight() {
     const wrapper = ReactDOM.findDOMNode(this.transitionGroup);
     // Mutate the DOM on the next tick, so we can pick up mounted/unmounting
@@ -110,9 +95,6 @@ class TruncatedText extends React.Component {
     this.updateHeight();
   }
 
-  /**
-   * Handle clicking the 'more'/'less' link.
-   */
   onClickTextLink(event) {
     if (this.props.preventDefaultOnExpand) {
       event.preventDefault();
@@ -132,11 +114,6 @@ class TruncatedText extends React.Component {
     this.updateHeight();
   }
 
-  /**
-   * Render the more text link.
-   *
-   * @returns {ReactElement}
-   */
   renderMoreLink() {
     const text = this.props.expandable
       ? this.state.expanded ? this.props.lessLinkText : this.props.moreLinkText
@@ -202,11 +179,6 @@ class TruncatedText extends React.Component {
     };
   }
 
-  /**
-   * Render the truncated text.
-   *
-   * @returns {ReactElement}
-   */
   renderText() {
     const cls = `${TruncatedText.baseClass}__text`;
     const textObj = this.props.title ? this.renderTextWithTitle() : this.renderTextNoTitle();
@@ -234,11 +206,6 @@ class TruncatedText extends React.Component {
     );
   }
 
-  /**
-   * Render.
-   *
-   * @returns {ReactElement}
-   */
   render() {
     const cls = classnames(TruncatedText.baseClass, this.props.className);
     return (
