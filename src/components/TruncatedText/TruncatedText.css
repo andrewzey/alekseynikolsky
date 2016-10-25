@@ -7,6 +7,8 @@
   height: auto;
   width: 100%;
   white-space: pre-line;
+  /* Force GPU Rendering */
+  transform: translate3d(0, 0, 0);
 }
 /* Entering text during an expandable transition */
 .truncated-text__text-enter {

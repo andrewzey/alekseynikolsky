@@ -76,10 +76,6 @@ class TruncatedText extends React.Component {
     // React nodes.
     if (wrapper) {
       const descenderPadding = 6;
-      // If there's no height set already, we can't transition. Set one.
-      if (!wrapper.style.height) {
-        wrapper.style.height = `${wrapper.clientHeight + descenderPadding}px`;
-      }
       setTimeout(() => {
         // Get the height of the DOM node that is entering.
         const entering = ReactDOM.findDOMNode(this.textBody);
