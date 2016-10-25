@@ -29,7 +29,7 @@ const ResponsiveVideo = ({ src, width, height }) => {
   };
   return (
     <div className={`${baseClass}`} style={ratio}>
-      <iframe src={src} width={width} height={height} frameBorder={0} webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+      <iframe src={src} width={width} height={height} frameBorder={0} allowFullScreen></iframe>
     </div>
   );
 };
