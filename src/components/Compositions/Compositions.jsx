@@ -37,6 +37,7 @@ const Orchestral = () => {
   });
   return (
     <div>
+      <DocumentTitle title='Aleksey Nikolsky - Orchestral Compositions' />
       {OrchestralCompositions}
     </div>
   );
@@ -62,6 +63,7 @@ const Chamber = () => {
   });
   return (
     <div>
+      <DocumentTitle title='Aleksey Nikolsky - Chamber Compositions' />
       {ChamberCompositions}
     </div>
   );
