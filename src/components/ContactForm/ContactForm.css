@@ -58,3 +58,8 @@
   background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
   text-decoration: none;
 }
+
+/* To fix Firefox's gross styling of red around required form elements */
+.ContactForm input:required, .ContactForm textarea:required {
+  box-shadow: none;
+}
