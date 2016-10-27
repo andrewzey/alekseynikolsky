@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import DocumentTitle from 'react-document-title';
+import { Redirect } from 'react-router';
 import MatchWithCallback from '../MatchWithCallback/MatchWithCallback';
 
 import Navigation from '../Navigation/Navigation';
@@ -96,6 +97,8 @@ const Compositions = ({ pathname, handleClick }) => {
         hasBackground={true}
         bgColor="gray"
       />
+      {/* TODO: Add compositions landing page and remove this */}
+      <Redirect to="/compositions/orchestral"/>
       {subSectionComponents}
     </div>
   );
