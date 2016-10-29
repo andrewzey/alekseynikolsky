@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
+import { sendEvent, GA_CATEGORY, GA_ACTION } from '../../analytics';
 
 import './Navigation.css';
 
@@ -19,6 +20,14 @@ const defaultProps = {
 };
 
 class Navigation extends React.Component {
+  logNavClick(url) {
+    sendEvent({
+      category: GA_CATEGORY.NAV,
+      action: GA_ACTION.CLICK,
+      value: url,
+    });
+  }
+
   updateBackgroundClearDivHackHeight() {
     if (this.backgroundClearDivHack && this.navNode) {
       this.backgroundClearDivHack.style.height = `${this.navNode.clientHeight + 10}px`;
@@ -70,6 +79,7 @@ class Navigation extends React.Component {
             className={`${baseClass}__nav__item__link`}
             activeClassName={`${baseClass}__nav__item__link--active`}
             activeOnlyWhenExact={shouldMatchExactly}
+            onClick={()=> {this.logNavClick(linkUrl)}}
           >
             {section.displayName}
           </Link>

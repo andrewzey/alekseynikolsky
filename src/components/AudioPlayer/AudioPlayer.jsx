@@ -1,17 +1,15 @@
 import React, { PropTypes } from 'react';
 import ReactAudioPlayer from 'react-responsive-audio-player';
+import { sendEvent, GA_CATEGORY, GA_ACTION } from '../../analytics';
+
 // Import default CSS
 import 'react-responsive-audio-player/dist/audioplayer.css';
 // Override default CSS with my own styles
 import './AudioPlayer.css';
 
 const propTypes = {
-  playlist: PropTypes.arrayOf(PropTypes.shape({
-    url: PropTypes.string,
-    displayText: PropTypes.string,
-  })),
-  mediaUrl: PropTypes.string,
-  mediaDisplayName: PropTypes.string,
+  mediaUrl: PropTypes.string.isRequired,
+  mediaDisplayName: PropTypes.string.isRequired,
 };
 /* This is my own version of the Audio Player that accepts an interface of
  * a single audio file to play, as well as a playlist
@@ -25,17 +23,38 @@ class AudioPlayer extends React.Component {
     // Discussion: https://github.com/benwiley4000/react-responsive-audio-player/pull/13
     setTimeout(this.player.resizeListener.bind(this), 0);
   }
+
+  handleClick(event) {
+    // HACKY :(
+    const play_pause_button_classes = [
+      'play_pause_button',
+      'play_pause_inner',
+      'left',
+      'right',
+      'triangle_1',
+      'triangle_2',
+    ];
+    const clickedEl = event.target;
+    if (play_pause_button_classes.includes(clickedEl.className)) {
+      sendEvent({
+        category: GA_CATEGORY.AUDIO,
+        action: GA_ACTION.TOGGLE_PLAY,
+        value: this.props.mediaDisplayName,
+      });
+    }
+  }
+
   render() {
-    const { playlist, mediaUrl, mediaDisplayName, ...rest} = this.props;
-    const audioPlaylist = (playlist)
-      ? playlist
-      : [{ url: mediaUrl, displayText: mediaDisplayName }]
+    const { mediaUrl, mediaDisplayName, ...rest} = this.props;
+    const playlist = [{ url: mediaUrl, displayText: mediaDisplayName }]
     return (
-      <ReactAudioPlayer
-        ref={(c) => this.player = c}
-        playlist={audioPlaylist} {...rest}
-      />
-    )
+      <div onClick={(event) => { this.handleClick(event); }}>
+        <ReactAudioPlayer
+          ref={(c) => this.player = c}
+          {...{playlist, ...rest}}
+        />
+      </div>
+    );
   }
 }
 

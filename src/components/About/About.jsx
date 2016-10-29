@@ -2,6 +2,7 @@ import React, { PropTypes } from 'react';
 import DocumentTitle from 'react-document-title';
 import { Flex, Box } from 'reflexbox';
 import classNames from 'classnames';
+import { sendEvent, GA_CATEGORY, GA_ACTION, GA_LABEL } from '../../analytics';
 
 import './About.css';
 
@@ -19,6 +20,15 @@ const baseClass = 'About';
 const propTypes = {
   pathname: PropTypes.string,
 };
+
+function logLinkedInClick(url) {
+  sendEvent({
+    category: GA_CATEGORY.EXTERNAL_LINK,
+    action: GA_ACTION.CLICK,
+    label: GA_LABEL.LINKED_IN,
+    value: url,
+  });
+}
 
 const About = ({ pathname }) => {
   const SummarySectionHeader = ({ children }) => {
@@ -48,7 +58,12 @@ const About = ({ pathname }) => {
             <Flex wrap>
               <Box col={12} sm={6} md={12} p={1}>
                 <img src={alekseyHeadshot} alt="Aleksey Profile" />
-                <a className={`${baseClass}__summary__linkedin`} href="linkedin.com/in/alekseynikolsky" target="_blank">LinkedIn Profile</a>
+                <a
+                  className={`${baseClass}__summary__linkedin`}
+                  href="http://linkedin.com/in/alekseynikolsky"
+                  target="_blank"
+                  onClick={() => logLinkedInClick('http://linkedin.com/in/alekseynikolsky')}
+                >LinkedIn Profile</a>
               </Box>
               <Box col={12} sm={6} md={12} p={1}>
                 <div>

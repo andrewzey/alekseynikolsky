@@ -1,6 +1,7 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
 import { Box } from 'reflexbox';
+import { sendEvent, GA_CATEGORY, GA_ACTION } from '../../analytics';
 
 import './InfoBlock.css';
 
@@ -18,11 +19,25 @@ const propTypes = {
   imageAltText: PropTypes.string,
 };
 
+function logNavClick(url) {
+  sendEvent({
+    category: GA_CATEGORY.INTERNAL_LINK,
+    action: GA_ACTION.CLICK,
+    value: url,
+  });
+}
+
 const InfoBlock = ({ title, pageUrl, handleSectionClick,
   description, imageUrl, imageAltText }) => {
   return (
     <Box col={12} sm={12} md={4} p={2} className={baseClass}>
-      <Link to={pageUrl} onClick={() => window.scrollTo(0, 0)}>
+      <Link
+        to={pageUrl}
+        onClick={() => {
+          logNavClick(pageUrl);
+          window.scrollTo(0, 0);
+        }}
+      >
         <ResponsiveImage
           src={imageUrl}
           alt={imageAltText}

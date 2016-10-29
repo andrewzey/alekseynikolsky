@@ -18,14 +18,6 @@ import Compositions from './Compositions/Compositions';
 import About from './About/About';
 import Contact from './Contact/Contact';
 
-export function logPageView() {
-  if (window.location.host === "alekseynikolsky.com" ||
-      window.location.host === "www.alekseynikolsky.com") {
-    ReactGA.set({ page: window.location.pathname });
-    ReactGA.pageview(window.location.pathname);
-  }
-}
-
 class App extends Component {
   componentDidMount() {
     ReactGA.initialize('UA-31358068-3');

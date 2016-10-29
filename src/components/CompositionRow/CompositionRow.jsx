@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Flex, Box } from 'reflexbox';
+import { sendEvent, GA_CATEGORY, GA_ACTION } from '../../analytics';
 
 import './CompositionRow.css';
 
@@ -23,6 +24,14 @@ const propTypes = {
   pieceSubtitles: PropTypes.arrayOf(PropTypes.string).isRequired,
   pieceDescription: PropTypes.string.isRequired,
 };
+
+function logScoreDownload(url) {
+  sendEvent({
+    category: GA_CATEGORY.SCORE,
+    action: GA_ACTION.DOWNLOAD,
+    value: url,
+  });
+}
 
 const CompositionRow = ({
   mediaType,
@@ -50,7 +59,7 @@ const CompositionRow = ({
         />
         <AudioPlayer
           mediaUrl={mediaUrl}
-          mediaAltText={mediaDisplayName}
+          mediaDisplayName={mediaDisplayName}
         />
       </div>
     );
@@ -64,6 +73,7 @@ const CompositionRow = ({
 
   if (mediaType === 'score') {
     const downloadFile = () => {
+      logScoreDownload(mediaDisplayName);
       window.open(mediaUrl);
     };
 

@@ -1,4 +1,5 @@
 import React, { PropTypes } from 'react';
+import { sendEvent, GA_CATEGORY, GA_ACTION, GA_LABEL } from '../../analytics';
 
 import './ResearchPaperSection.css';
 
@@ -12,10 +13,19 @@ const propTypes = {
   description: PropTypes.string,
 };
 
+function logScoreDownload(url) {
+  sendEvent({
+    category: GA_CATEGORY.EXTERNAL_LINK,
+    action: GA_ACTION.CLICK,
+    label: GA_LABEL.RESEARCH_PAPER,
+    value: url,
+  });
+}
+
 const ResearchPaperSection = ({ title, paperUrl, imageUrl, imageAltText,
   description}) => {
   return <div className="ResearchPaperSection">
-    <a href={paperUrl} target="_blank">
+    <a href={paperUrl} target="_blank" onClick={() => logScoreDownload(paperUrl)}>
       <img
         src={imageUrl}
         alt={imageAltText}
@@ -23,7 +33,7 @@ const ResearchPaperSection = ({ title, paperUrl, imageUrl, imageAltText,
       />
     </a>
       <h5>{title}</h5>
-    <a href={paperUrl} target="_blank">
+    <a href={paperUrl} target="_blank" onClick={() => logScoreDownload(paperUrl)}>
       <p className={`${baseClass}__url`}>{paperUrl}</p>
     </a>
     <p>{description}</p>

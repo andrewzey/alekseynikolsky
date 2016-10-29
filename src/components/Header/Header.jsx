@@ -1,5 +1,6 @@
 import React, { PropTypes } from 'react';
 import { Link } from 'react-router';
+import { sendEvent, GA_CATEGORY, GA_ACTION } from '../../analytics';
 
 import './Header.css';
 
@@ -14,12 +15,20 @@ const propTypes = {
   })),
 };
 
+function logNavClick(url) {
+  sendEvent({
+    category: GA_CATEGORY.NAV,
+    action: GA_ACTION.CLICK,
+    value: url,
+  });
+}
+
 const Header = ({ sections }) => {
   const homeSection = sections.find(section => section.displayName = 'Home');
   return (
     <header>
       <div className={`${baseClass}__site-title`}>
-        <Link to={homeSection.url}>
+        <Link to={homeSection.url} onClick={() => logNavClick(homeSection.url)}>
           <h1>Aleksey Nikolsky</h1>
         </Link>
       </div>

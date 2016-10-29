@@ -1,7 +1,7 @@
 import React from 'react';
 import { Match } from 'react-router';
 
-import { logPageView } from '../App';
+import { logPageView } from '../../analytics';
 
 const MatchWithGA = ({ component:Component, ...rest }) => (
   <Match {...rest} render={(matchProps) => {
