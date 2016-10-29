@@ -1,7 +1,6 @@
 import React, { PropTypes } from 'react';
 import DocumentTitle from 'react-document-title';
 import { Match, Redirect } from 'react-router';
-import MatchWithCallback from '../MatchWithCallback/MatchWithCallback';
 
 import Navigation from '../Navigation/Navigation';
 import ComingSoon from '../ComingSoon/ComingSoon';
@@ -14,7 +13,6 @@ import CompositionsScores from './CompositionsScores.json';
 
 const propTypes = {
   pathname: PropTypes.string,
-  handleClick: PropTypes.func,
 };
 
 // TODO: make it DRY!!!
@@ -97,7 +95,7 @@ const Scores = () => {
   );
 };
 
-const Compositions = ({ pathname, handleClick }) => {
+const Compositions = ({ pathname }) => {
   const subSections = [
     { displayName: 'Orchestral', url: 'orchestral', component: Orchestral },
     { displayName: 'Chamber', url: 'chamber', component: Chamber },
@@ -105,10 +103,9 @@ const Compositions = ({ pathname, handleClick }) => {
     { displayName: 'Scores', url: 'scores', component: Scores },
   ];
   const subSectionComponents = subSections.map(section => (
-    <MatchWithCallback
+    <Match
       pattern={section.url}
       component={section.component}
-      callback={() => handleClick()}
       key={section.url}
     />
   ));
@@ -118,7 +115,6 @@ const Compositions = ({ pathname, handleClick }) => {
       <DocumentTitle title='Aleksey Nikolsky - Compositions' />
       <Navigation
         sections={subSections}
-        handleSectionClick={handleClick}
         pathname={pathname}
         hasBackground={true}
         bgColor="gray"

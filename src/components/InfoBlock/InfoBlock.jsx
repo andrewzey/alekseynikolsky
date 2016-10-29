@@ -13,21 +13,16 @@ const baseClass = 'InfoBlock';
 const propTypes = {
   title: PropTypes.string,
   pageUrl: PropTypes.string,
-  handleSectionClick: PropTypes.func.isRequired,
   description: PropTypes.string,
   imageUrl: PropTypes.string,
   imageAltText: PropTypes.string,
-};
-
-const defaultProps = {
-  handleSectionClick: () => {},
 };
 
 const InfoBlock = ({ title, pageUrl, handleSectionClick,
   description, imageUrl, imageAltText }) => {
   return (
     <Box col={12} sm={12} md={4} p={2} className={baseClass}>
-      <Link to={pageUrl} onClick={() => handleSectionClick(pageUrl)}>
+      <Link to={pageUrl} onClick={() => window.scrollTo(0, 0)}>
         <ResponsiveImage
           src={imageUrl}
           alt={imageAltText}
@@ -42,6 +37,5 @@ const InfoBlock = ({ title, pageUrl, handleSectionClick,
 };
 
 InfoBlock.propTypes = propTypes;
-InfoBlock.defaultProps = defaultProps;
 
 export default InfoBlock;

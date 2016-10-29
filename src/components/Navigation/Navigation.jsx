@@ -12,7 +12,6 @@ const propTypes = {
   })),
   hasBackground: PropTypes.bool,
   bgColor: PropTypes.oneOf(['gray']),
-  handleClick: PropTypes.func,
 };
 
 const defaultProps = {
@@ -68,7 +67,6 @@ class Navigation extends React.Component {
         <li className={`${baseClass}__nav__item`} key={index}>
           <Link
             to={linkUrl}
-            onClick={() => this.props.handleSectionClick()}
             className={`${baseClass}__nav__item__link`}
             activeClassName={`${baseClass}__nav__item__link--active`}
             activeOnlyWhenExact={shouldMatchExactly}

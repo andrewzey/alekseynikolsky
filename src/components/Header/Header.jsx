@@ -12,19 +12,18 @@ const propTypes = {
     displayname: PropTypes.string,
     url: PropTypes.string,
   })),
-  handleSectionClick: PropTypes.func,
 };
 
-const Header = ({ sections, handleSectionClick }) => {
+const Header = ({ sections }) => {
   const homeSection = sections.find(section => section.displayName = 'Home');
   return (
     <header>
       <div className={`${baseClass}__site-title`}>
-        <Link to={homeSection.url} onClick={() => handleSectionClick()}>
+        <Link to={homeSection.url}>
           <h1>Aleksey Nikolsky</h1>
         </Link>
       </div>
-      <Navigation {...{sections, handleSectionClick: handleSectionClick}} />
+      <Navigation {...{sections}} />
     </header>
   );
 };

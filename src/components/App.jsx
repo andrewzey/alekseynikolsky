@@ -2,7 +2,7 @@ import 'babel-polyfill';
 
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router';
-import MatchWithCallback from './MatchWithCallback/MatchWithCallback';
+import MatchWithGA from './MatchWithGA/MatchWithGA';
 import ReactGA from 'react-ga';
 
 import './App.css';
@@ -18,24 +18,17 @@ import Compositions from './Compositions/Compositions';
 import About from './About/About';
 import Contact from './Contact/Contact';
 
+export function logPageView() {
+  if (window.location.host === "alekseynikolsky.com" ||
+      window.location.host === "www.alekseynikolsky.com") {
+    ReactGA.set({ page: window.location.pathname });
+    ReactGA.pageview(window.location.pathname);
+  }
+}
+
 class App extends Component {
-  logPageView() {
-    if (window.location.host === "alekseynikolsky.com" ||
-        window.location.host === "www.alekseynikolsky.com") {
-      ReactGA.set({ page: window.location.pathname });
-      ReactGA.pageview(window.location.pathname);
-    }
-  }
-
-  handleRoutingClick(sectionUrl) {
-    window.scrollTo(0, 0);
-    // Ensure that window.location.pathname is updated before logging page view
-    setTimeout(() => this.logPageView(), 0);
-  }
-
   componentDidMount() {
     ReactGA.initialize('UA-31358068-3');
-    this.logPageView();
 
     // Add 'no-touch' class so we can define hover effects in CSS *only* for
     // devices that don't support touch.
@@ -58,11 +51,10 @@ class App extends Component {
     const pageSections = sections.map(section => {
       const shouldMatchExactly = (section.url === '/');
       return (
-        <MatchWithCallback
+        <MatchWithGA
           exactly={shouldMatchExactly}
           pattern={section.url}
           component={section.component}
-          callback={() => this.handleRoutingClick()}
           key={section.url}
         />
       );
@@ -71,10 +63,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <div>
-          <Header
-            sections={sections}
-            handleSectionClick={() => this.handleRoutingClick()}
-          />
+          <Header sections={sections} />
           {pageSections}
           <Footer />
         </div>
