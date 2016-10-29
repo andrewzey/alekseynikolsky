@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../Button/Button';
 
 import './ContactForm.css';
 
@@ -53,7 +54,7 @@ const ContactForm = () => {
         tabIndex="5" type="text" name="_gotcha"
         style={{ display: 'none' }}
       />
-      <button type="submit" value="Send">Send</button>
+      <Button type="submit" value="Send" color="blue">Send</Button>
     </form>
   );
 }
