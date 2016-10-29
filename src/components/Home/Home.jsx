@@ -60,12 +60,12 @@ const Home = ({ pathname }) => {
         <Box col={12} sm={12} md={9} p={2} justify="center">
           <div className="credo">
             <h3>Credo</h3>
-            <p>In the Beginning there was Music.</p>
-            <p>The triumvirate of Musica Universalis, Musica Mundana, and Musica Humana was declared by the first civilizations, and upheld by the descendant cultures as the Order of the World. The music we hear is but a paradigm of Harmony that holds the universe - musical tone is a “sounding number” that expresses proportions between things material.</p>
-            <p>Discovery of organic unity of three harmonies: that of the celestial spheres, of social relations, and of human mind - all embodied in a single concept of Music - marked the rise of the world as we know it today. And the oblivion to this unity in the last few centuries does not take it away. Whether or not we are aware of it, our lives are still governed by Music - in the same way it used to be before the dawn of civilization in prehistoric times.</p>
-            <p>The physical properties of music determine its biological properties that shape humanity by mediating the individual minds. Living one’s life in harmony with Music is the secret that was well known to our distant ancestors who lived in peace and knew no wars. The tragic loss of this secret brought about a cascade of never-ending warfare. The more esoteric became the art of living in harmony with Music, the further away outspread the social and mental disharmony and tension, culminating in two World Wars that shook the world and made the prospect of the Third WW Apocalyptic.</p>
-            <p>Learning to hear Music and recognizing true music from false music is the panacea from much tribulation that overwhelms our lives today.</p>
-            <p className="credo__signature"> - Aleksey Nikolsky, October 10, 2016</p>
+            <p>In the Beginning there was Music…</p>
+            <p>The triumvirate of Musica Universalis, Musica Mundana, and Musica Humana was declared by the first civilizations, and upheld by the descendant cultures as the Order of the World. The music we hear is but a paradigm of Harmony that holds the universe together - musical tone is a “sounding number” that expresses proportions between things material.</p>
+            <p>Discovery of organic unity of three harmonies: the celestial spheres, the social relations, and the human mind - all, embodied in a single concept of Music - marked the rise of the world as we know it today. And the oblivion to this unity in the last few centuries does not take it away. Whether or not we are aware of it, our lives are still governed by Music - in the same way it used to be before the dawn of civilization in prehistoric times.</p>
+            <p>The physical properties of music determine its biological properties that shape humanity by mediating between the individual minds. Living one’s life in harmony with Music is the secret that was well known to our distant ancestors who lived in peace and knew no wars. The tragic loss of this secret brought about a cascade of never-ending warfare. The more esoteric became the art of living in harmony with Music, the further away outspread the social and mental disharmony and tension, culminating in two World Wars that shook the world and made the prospect of the Third WW apocalyptic.</p>
+            <p>Learning to hear Music and to recognizing true music from false music is the panacea for so much tribulation that overwhelms our lives today.</p>
+            <p className="credo__signature"> - Aleksey Nikolsky, October 29, 2016</p>
           </div>
         </Box>
         {InfoBlocks}
