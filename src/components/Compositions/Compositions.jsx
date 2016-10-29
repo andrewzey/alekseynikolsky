@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react';
 import DocumentTitle from 'react-document-title';
-import { Redirect } from 'react-router';
+import { Match, Redirect } from 'react-router';
 import MatchWithCallback from '../MatchWithCallback/MatchWithCallback';
 
 import Navigation from '../Navigation/Navigation';
@@ -10,6 +10,7 @@ import CompositionRow from '../CompositionRow/CompositionRow';
 // Import JSON data
 import CompositionsOrchestral from './CompositionsOrchestral.json';
 import CompositionsChamber from './CompositionsChamber.json';
+import CompositionsScores from './CompositionsScores.json';
 
 const propTypes = {
   pathname: PropTypes.string,
@@ -19,7 +20,7 @@ const propTypes = {
 // TODO: make it DRY!!!
 
 const Orchestral = () => {
-  const OrchestralCompositions = CompositionsOrchestral.map((composition, index) => {
+  const orchestralCompositions = CompositionsOrchestral.map((composition, index) => {
     const subtitles = composition.pieceSubtitles.split('\n');
     return (
       <CompositionRow
@@ -39,13 +40,13 @@ const Orchestral = () => {
   return (
     <div>
       <DocumentTitle title='Aleksey Nikolsky - Orchestral Compositions' />
-      {OrchestralCompositions}
+      {orchestralCompositions}
     </div>
   );
 };
 
 const Chamber = () => {
-  const ChamberCompositions = CompositionsChamber.map((composition, index) => {
+  const chamberCompositions = CompositionsChamber.map((composition, index) => {
     const subtitles = composition.pieceSubtitles.split('\n');
     return (
       <CompositionRow
@@ -65,12 +66,36 @@ const Chamber = () => {
   return (
     <div>
       <DocumentTitle title='Aleksey Nikolsky - Chamber Compositions' />
-      {ChamberCompositions}
+      {chamberCompositions}
     </div>
   );
 };
 
-const Scores = () => <div>Scores</div>;
+const Scores = () => {
+  const scores = CompositionsScores.map((score, index) => {
+    const subtitles = score.pieceSubtitles.split('\n');
+    return (
+      <CompositionRow
+        mediaType={score.mediaType}
+        mediaUrl={score.mediaUrl}
+        mediaDisplayName={`${score.pieceTitle} - ${score.pieceYear}`}
+        imgUrl={score.imgUrl}
+        imgAltText={score.imgAltText}
+        pieceTitle={score.pieceTitle}
+        pieceYear={score.pieceYear}
+        pieceSubtitles={subtitles}
+        pieceDescription={score.pieceDescription}
+        key={index}
+      />
+    );
+  });
+  return (
+    <div>
+      <DocumentTitle title='Aleksey Nikolsky - Compositions - Scores' />
+      {scores}
+    </div>
+  );
+};
 
 const Compositions = ({ pathname, handleClick }) => {
   const subSections = [
@@ -83,6 +108,7 @@ const Compositions = ({ pathname, handleClick }) => {
     <MatchWithCallback
       pattern={section.url}
       component={section.component}
+      callback={() => handleClick()}
       key={section.url}
     />
   ));
@@ -98,7 +124,11 @@ const Compositions = ({ pathname, handleClick }) => {
         bgColor="gray"
       />
       {/* TODO: Add compositions landing page and remove this */}
-      <Redirect to="/compositions/orchestral"/>
+      <Match
+        pattern="/compositions"
+        exactly
+        component={() => <Redirect to="/compositions/orchestral" />}
+      />
       {subSectionComponents}
     </div>
   );

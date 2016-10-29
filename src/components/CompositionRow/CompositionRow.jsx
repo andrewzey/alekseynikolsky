@@ -9,10 +9,11 @@ import AudioPlayer from '../AudioPlayer/AudioPlayer';
 import ResponsiveImage from '../ResponsiveImage/ResponsiveImage';
 import ResponsiveVideo from '../ResponsiveVideo/ResponsiveVideo';
 import TruncatedText from '../TruncatedText/TruncatedText';
+import Button from '../Button/Button';
 
 const baseClass = 'CompositionRow';
 const propTypes = {
-  mediaType: PropTypes.oneOf(['audio', 'video']).isRequired,
+  mediaType: PropTypes.oneOf(['audio', 'video', 'score']).isRequired,
   mediaUrl: PropTypes.string,
   mediaDisplayName: PropTypes.string,
   imgUrl: PropTypes.string,
@@ -58,6 +59,21 @@ const CompositionRow = ({
   if (mediaType === 'video') {
     media = (
       <ResponsiveVideo src={mediaUrl} />
+    );
+  }
+
+  if (mediaType === 'score') {
+    media = (
+      <div>
+        <ResponsiveImage
+          src={imgUrl}
+          alt={imgAltText}
+          heightWidthRatio={IMAGE_HEIGHT_WIDTH_RATIO_COMPOSITION_IMAGE}
+        />
+        <form style={{'marginTop': '4px'}} method="get" action={mediaUrl}>
+          <Button type="submit" color="blue">Download PDF</Button>
+        </form>
+      </div>
     );
   }
 
