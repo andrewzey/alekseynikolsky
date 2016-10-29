@@ -36,7 +36,7 @@ const Home = ({ pathname }) => {
     {
       title: 'Research',
       pageUrl: '/research',
-      description: 'While interested in the scientific investigation of music, I look at music primarily as a composer: as to how the meaningful structural elements of music are put together in order to express a particular idea (emotional state, imagery, attitude, etc.). In this quest, I am interested in all kinds of music: from folk to popular, and from historic to modern classical. I look at all music through the prism of music theory, history, pyschology, anthropology, and sociology.',
+      description: 'While interested in the scientific investigation of music, I look at music primarily as a composer: as to how the meaningful structural elements of music are put together to express a particular idea (emotional state, imagery, attitude, etc.). In this quest, I am interested in all kinds of music: from folk to popular, and from historic to modern classical. I look at all music through the prism of music theory, history, psychology, anthropology, sociology, and biology.',
       imageUrl: ImageResearch,
       imageAltText: 'Copenhagen Dome',
     },
