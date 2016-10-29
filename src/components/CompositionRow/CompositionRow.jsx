@@ -63,6 +63,10 @@ const CompositionRow = ({
   }
 
   if (mediaType === 'score') {
+    const downloadFile = () => {
+      window.open(mediaUrl);
+    };
+
     media = (
       <div>
         <ResponsiveImage
@@ -70,9 +74,11 @@ const CompositionRow = ({
           alt={imgAltText}
           heightWidthRatio={IMAGE_HEIGHT_WIDTH_RATIO_COMPOSITION_IMAGE}
         />
-        <form style={{'marginTop': '4px'}} method="get" action={mediaUrl}>
-          <Button type="submit" color="blue">Download PDF</Button>
-        </form>
+        <Button
+          style={{marginTop: '6px'}}
+          color="blue"
+          onClick={downloadFile}
+        >Download PDF</Button>
       </div>
     );
   }
