@@ -29,7 +29,7 @@ function logScoreDownload(url) {
   sendEvent({
     category: GA_CATEGORY.SCORE,
     action: GA_ACTION.DOWNLOAD,
-    value: url,
+    label: url,
   });
 }
 

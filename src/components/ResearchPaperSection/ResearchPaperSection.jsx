@@ -1,5 +1,5 @@
 import React, { PropTypes } from 'react';
-import { sendEvent, GA_CATEGORY, GA_ACTION, GA_LABEL } from '../../analytics';
+import { sendEvent, GA_CATEGORY, GA_ACTION } from '../../analytics';
 
 import './ResearchPaperSection.css';
 
@@ -17,8 +17,7 @@ function logScoreDownload(url) {
   sendEvent({
     category: GA_CATEGORY.EXTERNAL_LINK,
     action: GA_ACTION.CLICK,
-    label: GA_LABEL.RESEARCH_PAPER,
-    value: url,
+    label: url,
   });
 }
 

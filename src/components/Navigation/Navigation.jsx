@@ -24,7 +24,7 @@ class Navigation extends React.Component {
     sendEvent({
       category: GA_CATEGORY.NAV,
       action: GA_ACTION.CLICK,
-      value: url,
+      label: url,
     });
   }
 

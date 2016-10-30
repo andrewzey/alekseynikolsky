@@ -15,11 +15,6 @@ export const GA_ACTION = {
   CLICK: 'Click',
 };
 
-export const GA_LABEL = {
-  RESEARCH_PAPER: 'Research Paper',
-  LINKED_IN: 'LinkedIn',
-};
-
 export function logPageView() {
   if (window.location.host === "alekseynikolsky.com" ||
       window.location.host === "www.alekseynikolsky.com") {

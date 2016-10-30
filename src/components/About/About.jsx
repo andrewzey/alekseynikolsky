@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 import DocumentTitle from 'react-document-title';
 import { Flex, Box } from 'reflexbox';
 import classNames from 'classnames';
-import { sendEvent, GA_CATEGORY, GA_ACTION, GA_LABEL } from '../../analytics';
+import { sendEvent, GA_CATEGORY, GA_ACTION } from '../../analytics';
 
 import './About.css';
 
@@ -25,8 +25,7 @@ function logLinkedInClick(url) {
   sendEvent({
     category: GA_CATEGORY.EXTERNAL_LINK,
     action: GA_ACTION.CLICK,
-    label: GA_LABEL.LINKED_IN,
-    value: url,
+    label: url,
   });
 }
 

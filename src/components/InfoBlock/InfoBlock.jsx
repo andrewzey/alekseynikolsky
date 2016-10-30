@@ -23,7 +23,7 @@ function logNavClick(url) {
   sendEvent({
     category: GA_CATEGORY.INTERNAL_LINK,
     action: GA_ACTION.CLICK,
-    value: url,
+    label: url,
   });
 }
 

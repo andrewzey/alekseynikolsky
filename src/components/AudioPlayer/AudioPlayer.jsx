@@ -39,7 +39,7 @@ class AudioPlayer extends React.Component {
       sendEvent({
         category: GA_CATEGORY.AUDIO,
         action: GA_ACTION.TOGGLE_PLAY,
-        value: this.props.mediaDisplayName,
+        label: this.props.mediaDisplayName,
       });
     }
   }
