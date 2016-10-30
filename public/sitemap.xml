@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <url>
+      <loc>http://www.alekseynikolsky.com/</loc>
+      <lastmod>2016-10-29</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1</priority>
+   </url>
+
+   <url>
+      <loc>http://www.alekseynikolsky.com/statement</loc>
+      <lastmod>2016-10-29</lastmod>
+      <changefreq>weekly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://www.alekseynikolsky.com/compositions</loc>
+      <lastmod>2016-10-29</lastmod>
+      <changefreq>weekly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://www.alekseynikolsky.com/compositions/orchestral</loc>
+      <lastmod>2016-10-29</lastmod>
+      <changefreq>weekly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://www.alekseynikolsky.com/compositions/chamber</loc>
+      <lastmod>2016-10-29</lastmod>
+      <changefreq>weekly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://www.alekseynikolsky.com/compositions/fabulusions</loc>
+      <lastmod>2016-10-29</lastmod>
+      <changefreq>daily</changefreq>
+   </url>
+
+   <url>
+      <loc>http://www.alekseynikolsky.com/compositions/scores</loc>
+      <lastmod>2016-10-29</lastmod>
+      <changefreq>weekly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://www.alekseynikolsky.com/compositions/research</loc>
+      <lastmod>2016-10-29</lastmod>
+      <changefreq>weekly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://www.alekseynikolsky.com/compositions/method</loc>
+      <lastmod>2016-10-29</lastmod>
+      <changefreq>daily</changefreq>
+   </url>
+
+   <url>
+      <loc>http://www.alekseynikolsky.com/compositions/about</loc>
+      <lastmod>2016-10-29</lastmod>
+      <changefreq>weekly</changefreq>
+   </url>
+
+   <url>
+      <loc>http://www.alekseynikolsky.com/compositions/contact</loc>
+      <lastmod>2016-10-29</lastmod>
+      <changefreq>weekly</changefreq>
+   </url>
+</urlset>

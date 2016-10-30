@@ -2,6 +2,7 @@
   "root": "build/",
   "clean_urls": false,
   "routes": {
+    "/sitemap.xml": "sitemap.xml",
     "/**": "index.html"
   }
 }
