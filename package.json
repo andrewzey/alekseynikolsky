@@ -5,19 +5,19 @@
   "private": true,
   "devDependencies": {
     "chai": "3.5.0",
-    "enzyme": "2.5.1",
-    "react-addons-test-utils": "15.3.2",
-    "react-scripts": "^1.0.5"
+    "enzyme": "^2.8.2",
+    "react-scripts": "^1.0.6"
   },
   "dependencies": {
     "babel-polyfill": "^6.23.0",
     "classnames": "2.2.5",
-    "react": "15.3.2",
-    "react-addons-css-transition-group": "15.3.2",
+    "prop-types": "^15.5.10",
+    "react": "^15.5.4",
+    "react-addons-css-transition-group": "^15.5.2",
     "react-document-title": "^2.0.3",
-    "react-dom": "15.3.2",
-    "react-ga": "2.1.2",
-    "react-responsive-audio-player": "0.3.0",
+    "react-dom": "^15.5.4",
+    "react-ga": "^2.2.0",
+    "react-responsive-audio-player": "^1.1.4",
     "react-router": "4.0.0-alpha.3",
     "reflexbox": "^2.2.3",
     "whatwg-fetch": "^2.0.3"

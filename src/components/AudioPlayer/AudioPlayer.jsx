@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import ReactAudioPlayer from 'react-responsive-audio-player';
 import { sendEvent, GA_CATEGORY, GA_ACTION } from '../../analytics';
 

@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import DocumentTitle from 'react-document-title';
 import { Flex, Box } from 'reflexbox';
 import classNames from 'classnames';
@@ -61,6 +62,7 @@ const About = ({ pathname }) => {
                   className={`${baseClass}__summary__linkedin`}
                   href="http://linkedin.com/in/alekseynikolsky"
                   target="_blank"
+                  rel='noreferrer noopener'
                   onClick={() => logLinkedInClick('http://linkedin.com/in/alekseynikolsky')}
                 >LinkedIn Profile</a>
               </Box>

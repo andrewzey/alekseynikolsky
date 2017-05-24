@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { sendEvent, GA_CATEGORY, GA_ACTION } from '../../analytics';
 
 import './ResearchPaperSection.css';
@@ -24,7 +25,12 @@ function logScoreDownload(url) {
 const ResearchPaperSection = ({ title, paperUrl, imageUrl, imageAltText,
   description}) => {
   return <div className="ResearchPaperSection">
-    <a href={paperUrl} target="_blank" onClick={() => logScoreDownload(paperUrl)}>
+    <a
+      href={paperUrl}
+      target="_blank"
+      rel='noreferrer noopener'
+      onClick={() => logScoreDownload(paperUrl)}
+    >
       <img
         src={imageUrl}
         alt={imageAltText}
@@ -32,7 +38,12 @@ const ResearchPaperSection = ({ title, paperUrl, imageUrl, imageAltText,
       />
     </a>
       <h5>{title}</h5>
-    <a href={paperUrl} target="_blank" onClick={() => logScoreDownload(paperUrl)}>
+    <a
+      href={paperUrl}
+      target="_blank"
+      rel='noreferrer noopener'
+      onClick={() => logScoreDownload(paperUrl)}
+    >
       <p className={`${baseClass}__url`}>{paperUrl}</p>
     </a>
     <p>{description}</p>

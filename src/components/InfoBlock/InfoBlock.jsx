@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router';
 import { Box } from 'reflexbox';
 import { sendEvent, GA_CATEGORY, GA_ACTION } from '../../analytics';

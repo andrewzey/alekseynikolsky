@@ -1,4 +1,5 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 import './ResponsiveVideo.css'
 
 const baseClass = 'ResponsiveVideo';
@@ -29,7 +30,14 @@ const ResponsiveVideo = ({ src, width, height }) => {
   };
   return (
     <div className={`${baseClass}`} style={ratio}>
-      <iframe src={src} width={width} height={height} frameBorder={0} allowFullScreen></iframe>
+      <iframe
+        src={src}
+        width={width}
+        height={height}
+        frameBorder={0}
+        title="responsive-video"
+        allowFullScreen
+      ></iframe>
     </div>
   );
 };
