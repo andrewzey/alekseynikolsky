@@ -16,15 +16,6 @@ const propTypes = {
  * a single audio file to play, as well as a playlist
  */
 class AudioPlayer extends React.Component {
-  componentDidMount() {
-    // There is a bug that results in the player timeline not being sized
-    // correctly on initial page load if the player is not full screen width.
-    // This appears to be related to ReflexBox. This is a short-term solution,
-    // but I should determine the exact root cause and fix it.
-    // Discussion: https://github.com/benwiley4000/react-responsive-audio-player/pull/13
-    setTimeout(this.player.resizeListener.bind(this), 0);
-  }
-
   handleClick(event) {
     // HACKY :(
     const play_pause_button_classes = [
@@ -51,7 +42,7 @@ class AudioPlayer extends React.Component {
     return (
       <div onClick={(event) => { this.handleClick(event); }}>
         <ReactAudioPlayer
-          ref={(c) => this.player = c}
+          ref={(ref) => this.player = ref}
           {...{playlist, ...rest}}
         />
       </div>

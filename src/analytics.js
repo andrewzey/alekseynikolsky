@@ -15,9 +15,19 @@ export const GA_ACTION = {
   CLICK: 'Click',
 };
 
+export function logNavClick({path = null, category = GA_CATEGORY.NAV, action = GA_ACTION.CLICK} = {}) {
+  sendEvent({
+    category: GA_CATEGORY.NAV,
+    action: GA_ACTION.CLICK,
+    label: path,
+  });
+}
+
+const IS_PRODUCTION = window.location.host === "alekseynikolsky.com" ||
+  window.location.host === "www.alekseynikolsky.com";
+
 export function logPageView() {
-  if (window.location.host === "alekseynikolsky.com" ||
-      window.location.host === "www.alekseynikolsky.com") {
+  if (IS_PRODUCTION) {
     ReactGA.set({ page: window.location.pathname });
     ReactGA.pageview(window.location.pathname);
   } else {
@@ -26,8 +36,7 @@ export function logPageView() {
 }
 
 export function sendEvent(params) {
-  if (window.location.host === "alekseynikolsky.com" ||
-      window.location.host === "www.alekseynikolsky.com") {
+  if (IS_PRODUCTION) {
     ReactGA.event(params);
   } else {
     console.log('Dev GA Event: ', params);
