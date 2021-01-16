@@ -25,16 +25,29 @@ export const LINK_COLOR = '#3498db';
 export const IMG_STYLES = {
   INLINE: {
     paddingBottom: '0.5rem',
+  },
+  INLINE_LEFT: {
+    float: 'left',
+    paddingRight: '1rem',
     [MEDIA_QUERIES.breakpoints[0]]: {
       display: 'block',
-      textAlign: 'center',
       float: 'none',
-      maxWidth: '100%',
+      maxWidth: '75%',
+      margin: '0 auto 0',
       padding: '0.25rem 0 1rem 0',
     },
   },
-  INLINE_LEFT: {float: 'left', paddingRight: '1rem'},
-  INLINE_RIGHT: {float: 'right', paddingLeft: '1rem'},
+  INLINE_RIGHT: {
+    float: 'right',
+    paddingLeft: '1rem',
+    [MEDIA_QUERIES.breakpoints[0]]: {
+      display: 'block',
+      float: 'none',
+      maxWidth: '75%',
+      margin: '0 auto 0',
+      padding: '0.25rem 0 1rem 0',
+    },
+  },
   INLINE_CENTER: {
     display: 'block',
     textAlign: 'center',

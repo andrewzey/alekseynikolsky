@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import {Helmet} from 'react-helmet';
-import {Redirect, Route, Switch} from 'react-router-dom';
+import {Switch} from 'react-router-dom';
 import CompositionRow from '../CompositionRow';
 import Navigation from '../Navigation';
 import RouteWithGA from '../RouteWithGA';
@@ -10,6 +10,7 @@ import CompositionFabulusions from './CompositionsFabulusions.json';
 // Import JSON data
 import CompositionsOrchestral from './CompositionsOrchestral.json';
 import CompositionsScores from './CompositionsScores.json';
+import StylisticStatement from './StylisticStatement';
 
 
 const propTypes = {
@@ -101,11 +102,10 @@ export default function Compositions(props) {
         bgColor="gray"
       />
       <Switch>
-        {/* TODO: Add compositions landing page and remove this */}
-        <Route
+        <RouteWithGA
           exact
           path="/compositions"
-          render={() => <Redirect to="/compositions/orchestral" />}
+          component={StylisticStatement}
         />
         {subSectionComponents}
       </Switch>
