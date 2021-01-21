@@ -142,7 +142,7 @@ const About = () => {
               ...IMG_STYLES.INLINE_RIGHT,
               ...IMG_STYLES.INLINE_LANDSCAPE,
             }}
-          />s
+          />
           <BioPar>At 11 I switched instruments to piano and learned to score for piano and ensembles of 2-3 instruments. By the time I was 14, I had already earned degrees in Accordion Performance, Piano Performance, and Choral Singing from the Igumnov Music School and the Shchedrin Music School, graduating with honors from both. During this time I also took lessons in composition from the renowned Soviet songwriter, Pavel Ayedonitsky, and from Igor Yakushenko, the head of the jazz department at the Composer’s Union of the USSR – the person who was instrumental in helping me discover how popular idioms could be effectively used in writing “serious music.”</BioPar>
           <img
             src={aleksey17}
