@@ -1,20 +1,32 @@
-[{
-  "pieceTitle" : "Ad Infinitum",
-  "pieceYear" : 1989,
-  "pieceSubtitles" : "For symphonic orchestra\nPerformed by the Moscow Philharmonic Orchestra\nConductor: Alexander Vedernikov",
-  "pieceDescription" : "In 1990, right before leaving Russia, I wrote a symphonic piece as a resolution to the conflicting feelings I had in mediating the past and the future of Russian culture. 1990 was a year of enormous changes in the USSR: the Communist Party all of a sudden dismissed itself, and yielded the ruling wheel to all sort of criminal elements of society, who within a few months merged with the government officials and “privatized” all precious resources in the country – at the absence of any laws to regulate such activities. This left good half of the country jobless, without any prospects.\n\nAt the time, I felt as though the entire civilization crushed – and Russian people will carry on eternal suffering that has been the trait of Russian history. This prompted me to employ a unique “Big Bang” musical form. The music starts and ends with a Big Bang, after which nothing is left - merely noise devoid of any tonal organization. And in between the beginning and end there are multitude of life forms, each of which grows from a germ, flourishes, then goes out of control and gets lost in chaos.\n\nThe entire macro form is built on a pool of minuscule motifs, some of which are tonally organized, and some others, atonally organized. Some motifs are attracted to one another forming melodies, some others repel, and some collide and explode into a chord. The entire harmonic system can be characterized as \"pan-tonality,\" housing poly-tonal components of musical texture in a “suspended” manner, resembling how planetary systems are separated by the interplanetary space. One might be able to spot local \"tonics\" in each of the components, but experience them as free floating in relation to each other.\n\n“Ad Infinitum” was inspired by the compositional principles of “analytical method” of Pavel Filonov in painting, and presents a monumental tombstone for Shostakovich’s “socialist realism” in symphonies – a manner of drawing the panorama of a contemporary society in a narrative of a musical composition.",
-  "mediaType" : "audio",
-  "mediaUrl" : "/audio/orchestral/ad-infinitum.mp3",
-  "imgUrl" : "/images/compositions/orchestral/filonov-war-with-germany-1915.jpg",
-  "imgAltText" : "Filonov - War with Germany 1915"
-},
-{
-  "pieceTitle" : "3 Songs after Daniel Harms",
-  "pieceYear" : 1990,
-  "pieceSubtitles" : "For soprano and chamber orchestra\nTatiana Maroushak – Soprano\nOrquesta de Baja California\nEduardo Garcio-Barios – Conductor ",
-  "pieceDescription" : "Here are 3 songs for soprano and chamber orchestra after Daniel Harms, a renowned Russian surrealist poet. This is my attempt to strike a right balance between modernity and tradition, while presenting a musical “movie” of the very bright surrealistic content of the songs. The music features clear themes, polymodal organization and bright emotional characteristics.\n\nThe first song is a pastoral about a wild girl, the mill-man’s daughter, who scares off the cattle out of the forest with her spooky eyes. \n\nThe second song describes how an entire town is deep asleep amidst the night except one man who stays up counting his money to his deep satisfaction. \n\nThe third song presents a story of a Scythian nomad who just assassinated a nobleman, and is pursued by the nobleman’s servants, gets wounded, and finally dies while the helpless gods are watching the entire event.",
-  "mediaType" : "audio",
-  "mediaUrl" : "/audio/orchestral/3-songs-after-daniel-harms.mp3",
-  "imgUrl" : "/images/compositions/orchestral/chagall-flying-over-town.jpg",
-  "imgAltText" : "Chagall - Flying Over Town"
-}]
+[
+  {
+    "pieceTitle": "Trump and Circumstance",
+    "pieceYear": 2020,
+    "pieceSubtitles": "For Symphonic Orchestra\nMIDI demonstration",
+    "pieceDescription": "From 2016 on, I have been puzzled by the Trump phenomenon – how such a grotesque anti-hero with so many obvious deficiencies could be elected at the highest post in a world’s most powerful country? On another hand, in 2020, I finally accomplished my 5-year-long project of amending the scientific research on the origins and evolution of music. In the process of it, I realized which structural features are biologically “normative” for music and therefore are easy to grasp by the audiences, and which features are “abnormal” and therefore are hard, or even impossible to grasp. This prompted me to try to revive the traditional use of music as rhetoric means to inspire an audience in a certain way. Music rhetoric played a huge role in Europe, starting from Antiquity – heavily employed by the Christian Church. From the 18th century, music rhetoric has been used by secular authorities to incite public discussions on vital political and cultural issues (e.g., the cultural “War” between supporters of Piccini and Gluck in the 1780s).\n\nI decided to choose Trump as a chief protagonist for a tone poem and represent his growing influence over American people despite all devastating repercussions. In a way, this was an experiment for me, to see if my music could move a listener to an emotional reaction to Trump and Trumpism. To achieve this rhetoric goal, I elaborated a new compositional technique and a new artistic style.\n\nI employed the theories of musical intonation by Asafyev and of modality by Yavorsky to create a serial-like implementation of the polystylistic technique. Each semantic feature of a musical program (plot) is conveyed through the pool of pre-existing motifs whose expression is associated with the feature that I am trying to project. Motifs from this pool are rotated in order to illuminate the development of that feature in a plot. Because the motifs originate from music of different tonal organization, my entire composition had to employ a special polymodal technique to seamlessly incorporate all the motifs. The result is akin to the use of music in ads – it subconsciously guides a listener towards certain emotional disposition. Stylistically, the interplay of motifs is presented as a “realistic” implementation of surrealism: the listener as though is put in trance and is experiencing a dream that is based on things previously observed in real life. In the beginning, this dream is entertaining, even funny at times, but gradually it turns into a nightmare. The listener wants to wake up, but it remains unclear whether it is possible at all!",
+    "mediaType": "video",
+    "mediaUrl": "https://www.youtube.com/embed/m2SU3RtDHQo",
+    "imgUrl": "",
+    "imgAltText": ""
+  },
+  {
+    "pieceTitle" : "3 Songs after Daniel Harms",
+    "pieceYear" : 1990,
+    "pieceSubtitles" : "For Soprano and Chamber Orchestra\nTatiana Maroushak – Soprano\nOrquesta de Baja California\nEduardo Garcio-Barios – Conductor ",
+    "pieceDescription" : "Here are 3 songs for soprano and chamber orchestra after Daniel Harms, a renowned Russian surrealist poet. This is my attempt to strike a right balance between modernity and tradition, while presenting a musical “movie” of the very bright surrealistic content of the songs. The music features clear themes, polymodal organization and bright emotional characteristics.\n\nThe first song is a pastoral about a wild girl, the mill-man’s daughter, who scares off the cattle out of the forest with her spooky eyes. \n\nThe second song describes how an entire town is deep asleep amidst the night except one man who stays up counting his money to his deep satisfaction. \n\nThe third song presents a story of a Scythian nomad who just assassinated a nobleman, and is pursued by the nobleman’s servants, gets wounded, and finally dies while the helpless gods are watching the entire event.",
+    "mediaType" : "audio",
+    "mediaUrl" : "/audio/orchestral/3-songs-after-daniel-harms.mp3",
+    "imgUrl" : "/images/compositions/orchestral/chagall-flying-over-town.jpg",
+    "imgAltText" : "Chagall - Flying Over Town"
+  },
+  {
+    "pieceTitle" : "Ad Infinitum",
+    "pieceYear" : 1989,
+    "pieceSubtitles" : "For Symphonic Orchestra\nPerformed by the Moscow Philharmonic Orchestra\nConductor: Alexander Vedernikov",
+    "pieceDescription" : "In 1990, right before leaving Russia, I wrote a symphonic piece as a resolution to the conflicting feelings I had in mediating the past and the future of Russian culture. 1990 was a year of enormous changes in the USSR: the Communist Party all of a sudden dismissed itself, and yielded the ruling wheel to all sort of criminal elements of society, who within a few months merged with the government officials and “privatized” all precious resources in the country – at the absence of any laws to regulate such activities. This left good half of the country jobless, without any prospects.\n\nAt the time, I felt as though the entire civilization crushed – and Russian people will carry on eternal suffering that has been the trait of Russian history. This prompted me to employ a unique “Big Bang” musical form. The music starts and ends with a Big Bang, after which nothing is left - merely noise devoid of any tonal organization. And in between the beginning and end there are multitude of life forms, each of which grows from a germ, flourishes, then goes out of control and gets lost in chaos.\n\nThe entire macro form is built on a pool of minuscule motifs, some of which are tonally organized, and some others, atonally organized. Some motifs are attracted to one another forming melodies, some others repel, and some collide and explode into a chord. The entire harmonic system can be characterized as \"pan-tonality,\" housing poly-tonal components of musical texture in a “suspended” manner, resembling how planetary systems are separated by the interplanetary space. One might be able to spot local \"tonics\" in each of the components, but experience them as free floating in relation to each other.\n\n“Ad Infinitum” was inspired by the compositional principles of “analytical method” of Pavel Filonov in painting, and presents a monumental tombstone for Shostakovich’s “socialist realism” in symphonies – a manner of drawing the panorama of a contemporary society in a narrative of a musical composition.",
+    "mediaType" : "audio",
+    "mediaUrl" : "/audio/orchestral/ad-infinitum.mp3",
+    "imgUrl" : "/images/compositions/orchestral/filonov-war-with-germany-1915.jpg",
+    "imgAltText" : "Filonov - War with Germany 1915"
+  }
+]
