@@ -8,8 +8,14 @@ import {IMAGE_HEIGHT_WIDTH_RATIO_HERO} from '../../constants';
 import HeroImage from '../../images/research/research-hero.jpg';
 import HeroOverlay, {HeroOverlayPar, HeroOverlayTitle, HERO_OVERLAY_TYPES} from '../HeroOverlay';
 import ResponsiveImage from '../ResponsiveImage';
-import ResearchPapers from './ResearchPapers.json';
-import {Heading5, Par} from '../common';
+import ResearchItemsAcademic from './ResearchItemsAcademic.json';
+import ResearchItemsPopular from './ResearchItemsPopular.json';
+import {Heading2, Heading5, Heading6, Par} from '../common';
+import {BODY_TEXT_STYLE} from '../../styles';
+import Dropdown from 'react-dropdown';
+
+import 'react-dropdown/style.css';
+import './Research.css'; // required for stupid dropdown style
 
 function logDownload(url) {
   sendEvent({
@@ -23,7 +29,23 @@ const StyledBox = styled(Box)({
   position: 'relative',
 });
 
-const ResearchPaper = styled.div({
+const StyledDropdown = styled(Dropdown)({
+  float: 'right',
+  minWidth: 190,
+  marginBottom: 20,
+
+  fontSize: '1rem',
+  ...BODY_TEXT_STYLE,
+});
+
+const SectionHeading = styled(Heading2)({
+  fontSize: '1.75rem',
+  textAlign: 'left',
+  marginTop: '2rem',
+  marginBottom: '2rem',
+});
+
+const ResearchItem = styled.div({
   display: 'block',
   marginBottom: '2rem',
   clear: 'both',
@@ -33,7 +55,7 @@ const ResearchPaper = styled.div({
   hyphens: 'auto',
 });
 
-const ResearchPaperThumbnail = styled.img({
+const ResearchItemThumbnail = styled.img({
   position: 'relative',
   float: 'left',
   width: '125px',
@@ -41,50 +63,88 @@ const ResearchPaperThumbnail = styled.img({
   marginRight: '12px',
 });
 
-const PaperUrl = styled(Par)({
-  color: '#3498db',
-  textDecoration: 'underline',
-});
-
-const ResearchPaperSection = ({title, paperUrl, imageUrl, imageAltText, description}) => {
-  return <ResearchPaper>
+const ResearchItemSection = ({title, year, format, url, imageUrl, imageAltText, description}) => {
+  return <ResearchItem>
     <a
-      href={paperUrl}
+      href={url}
       target="_blank"
       rel='noreferrer noopener'
-      onClick={() => logDownload(paperUrl)}
+      onClick={() => logDownload(url)}
     >
-      <ResearchPaperThumbnail
+      <ResearchItemThumbnail
         src={imageUrl}
         alt={imageAltText}
       />
-    </a>
     <Heading5>{title}</Heading5>
-    <a
-      href={paperUrl}
-      target="_blank"
-      rel='noreferrer noopener'
-      onClick={() => logDownload(paperUrl)}
-    >
-      <PaperUrl>{paperUrl}</PaperUrl>
     </a>
+    <Heading6>{year} - {format}</Heading6>
     <Par>{description}</Par>
-  </ResearchPaper>
+  </ResearchItem>
 };
 
-ResearchPaperSection.propTypes = {
+ResearchItemSection.propTypes = {
   title: PropTypes.string,
-  paperUrl: PropTypes.string,
+  year: PropTypes.number,
+  format: PropTypes.string,
+  url: PropTypes.string,
   imageUrl: PropTypes.string,
   imageAltText: PropTypes.string,
   description: PropTypes.string,
 };
 
+const SHOW_ALL = 'All';
+
 export default class Research extends React.Component {
+  state = {
+    formatFilter: SHOW_ALL,
+  };
+
+  onSelectFilter = (filter) => {
+    this.setState({formatFilter: filter.value});
+  };
+
+  renderPopularPapers() {
+    const data = ResearchItemsPopular
+      .filter(paper => this.state.formatFilter === SHOW_ALL || paper.format === this.state.formatFilter);
+    if (!data.length) {
+      return null;
+    }
+
+    return <>
+      <SectionHeading style={{textAlign: 'left'}}>Popular Works</SectionHeading>
+      {data.map((paper, index) => {
+        return <ResearchItemSection {...paper} key={index} />
+      })}
+    </>
+  }
+
+
+  renderAcademicPapers() {
+    const data = ResearchItemsAcademic
+      .filter(paper => this.state.formatFilter === SHOW_ALL || paper.format === this.state.formatFilter);
+    if (!data.length) {
+      return null;
+    }
+
+    return <>
+      <SectionHeading style={{textAlign: 'left'}}>Academic Works</SectionHeading>
+      {data.map((paper, index) => {
+        return <ResearchItemSection {...paper} key={index} />
+      })}
+    </>
+  }
+
+
   render() {
-    const researchPaperSections = ResearchPapers.map((paper, index) => {
-      return <ResearchPaperSection {...paper} key={index} />
-    });
+    const options = [
+      SHOW_ALL,
+      ...Array.from(
+        new Set([
+          ...ResearchItemsPopular.map((paper) => paper.format),
+          ...ResearchItemsAcademic.map((paper) => paper.format),
+        ])
+      )
+    ].sort();
 
     return (
       <React.Fragment>
@@ -106,7 +166,18 @@ export default class Research extends React.Component {
             </HeroOverlay>
           </StyledBox>
           <Box width={[12/12, 12/12, 12/12]} padding={2}>
-            {researchPaperSections}
+            <div style={{height: 20}}>
+              <StyledDropdown
+                options={options}
+                onChange={this.onSelectFilter}
+                value={this.state.formatFilter}
+                placeholder="Select an option"
+                controlClassName=".Dropdown-control"
+                menuClassName=".Dropdown-menu"
+              />
+            </div>
+              {this.renderPopularPapers()}
+              {this.renderAcademicPapers()}
           </Box>
         </Flex>
       </React.Fragment>

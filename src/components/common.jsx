@@ -13,6 +13,15 @@ export const Heading1 = styled.h1({
   }
 });
 
+export const Heading2 = styled.h3({
+  ...HEADING_TEXT_STYLE,
+  fontSize: '1.5rem',
+  fontWeight: 'bold',
+  paddingTop: 10,
+  paddingBottom: 10,
+  textAlign: 'center',
+});
+
 export const Heading3 = styled.h3({
   ...HEADING_TEXT_STYLE,
   fontSize: '1.375rem',
@@ -33,6 +42,14 @@ export const Heading5 = styled.h5({
   ...BODY_TEXT_STYLE,
   fontWeight: 'bold',
 });
+
+export const Heading6 = styled.h5({
+  ...BODY_TEXT_STYLE,
+  fontWeight: 'regular',
+  fontStyle: 'italic',
+  color: 'rgb(40,40,40)',
+});
+
 
 export const Par = styled.p({
   ...BODY_TEXT_STYLE,

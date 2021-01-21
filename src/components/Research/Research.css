@@ -1,0 +1,9 @@
+/* Stupid dropdown lib requires this */
+
+.Dropdown-control {
+  cursor: pointer;
+}
+
+.Dropdown-menu {
+  max-height: 250px;
+}
