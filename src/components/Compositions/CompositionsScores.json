@@ -5,7 +5,7 @@
     "pieceSubtitles" : "For Symphonic Orchestra",
     "pieceDescription" : "Inspired by the impressionistic music of Ives and Debussy, I forged new style of tonal composition based on thematic writing in chromatic poly-modality. Each section of the music form relies on its own musical mode, the degrees of which receive chromatic alteration as needed in the process of the thematic development – to provide greater tension. I dedicated this work to Edison Denisov, who edited it during his last days in 1996 (despite his fatal illness) and strongly encouraged my compositional ideas. The orchestration pioneers a very unusual approach, emulating the pedalization on a grand piano by layering the decays in harmonic transitions. The resulting morphing effect contributes a special “sfumato” aura to otherwise quite straightforward harmonic functions.\n\nThe music unveils in a free-floating fashion akin Ravel’s Pavane, yet rhythmically articulated to illustrate the lackadaisical contemplation of a night in a big urban cityscape, as during a solitary walk by a bank of a river – perhaps, after a rain, when the air is fresh and streets are empty. The state of relaxation of mind while casual activity of walking provides a peculiar piece of urban poetics to replenish the listener’s soul.",
     "mediaType" : "score",
-    "mediaUrl" : "/scores/nikolsky-evening-as-it-is.pdf",
+    "mediaUrl" : "/scores/nikolsky-1996-evening-as-it-is.pdf",
     "imgUrl" : "/images/compositions/scores/korovin-boulevard-by-night.jpg",
     "imgAltText" : "Korovin - Boulevard by Night"
   },
@@ -20,6 +20,16 @@
     "imgAltText" : "Mystic Mountain"
   },
   {
+    "pieceTitle": "3 Songs after Daniel Harms",
+    "pieceYear": 1990,
+    "pieceSubtitles": "For Soprano and Chamber Orchestra",
+    "pieceDescription": "Here are 3 songs for soprano and chamber orchestra after Daniel Harms, a renowned Russian surrealist poet. This is my attempt to strike a right balance between modernity and tradition, while presenting a musical “movie” of the very bright surrealistic content of the songs. The music features clear themes, polymodal organization and bright emotional characteristics.\n\nThe first song is a pastoral about a wild girl, the mill-man’s daughter, who scares off the cattle out of the forest with her spooky eyes. \n\nThe second song describes how an entire town is deep asleep amidst the night except one man who stays up counting his money to his deep satisfaction. \n\nThe third song presents a story of a Scythian nomad who just assassinated a nobleman, and is pursued by the nobleman’s servants, gets wounded, and finally dies while the helpless gods are watching the entire event.",
+    "mediaType": "score",
+    "mediaUrl": "/scores/nikolsky-1990-3-songs-after-daniel-harms.pdf",
+    "imgUrl": "/images/compositions/scores/chagall-flying-over-town.jpg",
+    "imgAltText": "Chagall - Flying Over Town"
+  },
+  {
     "pieceTitle": "Ad Infinitum",
     "pieceYear": 1989,
     "pieceSubtitles": "For Symphonic Orchestra",
@@ -28,5 +38,15 @@
     "mediaUrl": "/scores/nikolsky-1989-ad-infinitum.pdf",
     "imgUrl": "/images/compositions/scores/filonov-formula-of-the-revolution.jpg",
     "imgAltText": "Filonov - Formula of the Revolution"
+  },
+  {
+    "pieceTitle": "Novella",
+    "pieceYear": 1989,
+    "pieceSubtitles": "For Flute, Violin and Cello",
+    "pieceDescription": "This work represents my attempt to elaborate the techniques of handling musical material in traditional way – yet with originality. Five movements, contrasting in style, each reads like a chapter that takes place at a different location. \n\nEach movement pays contribution to a set of different historic musical styles: first movement – to Handel and Corelli, second – to Debussy and Bartok, third – Faure, Milhaud, Couperin and Ives, fourth – Alban Berg and Charlie Parker, and fifth – Schoenberg and Prokofiev (the latter applies to the score only: the audio recording features an earlier version without the Schoenberg-like section). Stylistically, I emulated merely the manner of tonal organization, and not characteristic harmonic or melodic patterns – therefore, avoiding poly-stylistic or eclectic flavor in the entire composition. \n\nOverall, this composition offers great variety of content, form, combined with bright and contrasting thematic material, charged with strong emotional characteristics – to demonstrate the solution to the crisis of content and contrast, which have been troubling the modernistic and post-modernistic composers ever since the 1940s.",
+    "mediaType": "score",
+    "mediaUrl": "/scores/nikolsky-1989-novella-1994-revision.pdf",
+    "imgUrl": "/images/compositions/scores/petrov-vodkin-fantasia-1925.jpg",
+    "imgAltText": "Petrov - Vodkin Fantasia 1925"
   }
 ]
