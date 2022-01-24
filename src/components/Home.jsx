@@ -115,7 +115,7 @@ export default class Home extends React.Component {
               heightWidthRatio={IMAGE_HEIGHT_WIDTH_RATIO_HERO}
             />
           </Box>
-          <Box width={[12/12, 12/12, 9/12]} padding={2}>
+          {/* <Box width={[12/12, 12/12, 9/12]} padding={2}>
             <CredoWrapper className="credo">
               <Heading3>Credo</Heading3>
               <CredoPar>In the Beginning there was Musica…</CredoPar>
@@ -126,7 +126,7 @@ export default class Home extends React.Component {
               <CredoPar>Learning to hear Musica and to recognize true music from music-like sound design, is the panacea for so much tribulation that has overwhelmed our lives today.</CredoPar>
               <CredoSignature> - Aleksey Nikolsky, November 9, 2020</CredoSignature>
             </CredoWrapper>
-          </Box>
+          </Box> */}
           {this.renderInfoBlocks()}
         </Flex>
       </PageWrapper>
