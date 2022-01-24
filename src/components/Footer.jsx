@@ -18,7 +18,7 @@ const AttributionSpan = styled.span({
 
 const Footer = () => (
   <StyledFooter>
-    Copyright &copy; 2020 Aleksey Nikolsky <br />
+    Copyright &copy; 2022 Aleksey Nikolsky <br />
     <AttributionSpan>Site Design by Tori Press & Andrew Zey</AttributionSpan>
   </StyledFooter>
 );
