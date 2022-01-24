@@ -176,8 +176,8 @@ export default class Research extends React.Component {
                 menuClassName=".Dropdown-menu"
               />
             </div>
-              {this.renderPopularPapers()}
               {this.renderAcademicPapers()}
+              {this.renderPopularPapers()}
           </Box>
         </Flex>
       </React.Fragment>
