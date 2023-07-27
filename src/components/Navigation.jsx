@@ -2,7 +2,6 @@ import styled from '@emotion/styled/macro';
 import PropTypes from 'prop-types';
 import React from 'react';
 import {NavLink} from 'react-router-dom';
-import {logNavClick} from '../analytics';
 import {Sections} from '../propTypes';
 import {MEDIA_QUERIES, SITE_MIN_WIDTH} from '../styles';
 
@@ -117,7 +116,6 @@ class Navigation extends React.Component {
               }
             }
             exact
-            onClick={()=> {logNavClick({path: linkUrl})}}
           >
             {section.displayName}
           </StyledNavLink>

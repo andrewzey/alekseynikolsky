@@ -9,7 +9,6 @@ import ImageCredo from '../images/home/home-school-of-athens.jpg';
 import ResponsiveImage from './ResponsiveImage';
 import {Heading3, Par} from './common';
 import styled from '@emotion/styled/macro';
-import {logNavClick, GA_CATEGORY} from '../analytics';
 import {LINK_COLOR, MEDIA_QUERIES} from '../styles';
 import {NavLink} from 'react-router-dom';
 
@@ -76,7 +75,6 @@ const InfoBlock = ({title, pageUrl, description, imageUrl, imageAltText}) => {
       <StyledNavLink
         to={pageUrl}
         onClick={() => {
-          logNavClick({path: pageUrl, category: GA_CATEGORY.INTERNAL_LINK});
           window.scrollTo(0, 0);
         }}
       >

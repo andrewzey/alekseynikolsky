@@ -2,7 +2,6 @@ import styled from '@emotion/styled/macro';
 import PropTypes from 'prop-types';
 import React from 'react';
 import {Box, Flex} from 'rebass';
-import {GA_ACTION, GA_CATEGORY, sendEvent} from '../analytics';
 import {IMAGE_HEIGHT_WIDTH_RATIO_COMPOSITION_IMAGE} from '../constants';
 import AudioPlayer from './AudioPlayer/AudioPlayer';
 import Button from './Button';
@@ -30,14 +29,6 @@ const SubTitle = styled(Par)({
 const Description = styled.div({
   paddingTop: '1rem',
 });
-
-function logScoreDownload(url) {
-  sendEvent({
-    category: GA_CATEGORY.SCORE,
-    action: GA_ACTION.DOWNLOAD,
-    label: url,
-  });
-}
 
 export default class CompositionRow extends React.Component {
   static propTypes = {
@@ -94,7 +85,6 @@ export default class CompositionRow extends React.Component {
 
     if (mediaType === 'score') {
       const downloadFile = () => {
-        logScoreDownload(mediaDisplayName);
         window.open(mediaUrl);
       };
 

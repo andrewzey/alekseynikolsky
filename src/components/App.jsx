@@ -6,7 +6,6 @@ import styled from '@emotion/styled/macro';
 import emotionReset from 'emotion-reset';
 import {ThemeProvider} from 'emotion-theming';
 import React, {Component} from 'react';
-import ReactGA from 'react-ga';
 import {BrowserRouter} from 'react-router-dom';
 import {theme, LINK_COLOR, SITE_MIN_WIDTH} from '../styles';
 import About from './About';
@@ -17,7 +16,7 @@ import Footer from './Footer';
 import Header from './Header';
 import Home from './Home';
 import Research from './Research/Research';
-import RouteWithGA from './RouteWithGA';
+import Route from './Route';
 import Statement from './Statement';
 import {Switch} from 'react-router-dom';
 
@@ -41,14 +40,10 @@ const sections = [
 ];
 
 class App extends Component {
-  componentDidMount() {
-    ReactGA.initialize('UA-31358068-3');
-  }
-
   render() {
     const pageSections = sections.map(section => {
       return (
-        <RouteWithGA
+        <Route
           exact={section.exact}
           path={section.path}
           component={section.component}

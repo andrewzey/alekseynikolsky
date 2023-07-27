@@ -14,21 +14,12 @@ import kidsAfterMIS from '../images/about/kids-after-mozart-in-shape.jpg';
 import korndorfAndLedenyov from '../images/about/korndorf-and-ledenyov.jpg';
 import moscowConservatory from '../images/about/moscow-conservatory.jpg';
 import schnittkeAndDenisov from '../images/about/schnittke-and-denisov.jpg';
-import {GA_ACTION, GA_CATEGORY, sendEvent} from '../analytics';
 import {BODY_TEXT_STYLE, IMG_STYLES, MEDIA_QUERIES} from '../styles';
 import {Heading4, Heading5, Par} from './common';
 
 const propTypes = {
   pathname: PropTypes.string,
 };
-
-function logLinkedInClick(url) {
-  sendEvent({
-    category: GA_CATEGORY.EXTERNAL_LINK,
-    action: GA_ACTION.CLICK,
-    label: url,
-  });
-}
 
 const ImgHeadshot = styled.img({
   width: '100%',
@@ -98,7 +89,6 @@ const About = () => {
                 href="http://linkedin.com/in/alekseynikolsky"
                 target="_blank"
                 rel='noreferrer noopener'
-                onClick={() => logLinkedInClick('http://linkedin.com/in/alekseynikolsky')}
               >LinkedIn Profile</AnchorLinkedIn>
             </Box>
             <Box width={[12/12, 6/12, 12/12]} padding={1}>

@@ -4,7 +4,7 @@ import {Helmet} from 'react-helmet';
 import {Switch} from 'react-router-dom';
 import CompositionRow from '../CompositionRow';
 import Navigation from '../Navigation';
-import RouteWithGA from '../RouteWithGA';
+import Route from '../Route';
 import CompositionsChamber from './CompositionsChamber.json';
 import CompositionFabulusions from './CompositionsFabulusions.json';
 // Import JSON data
@@ -82,7 +82,7 @@ export default function Compositions(props) {
     {displayName: 'Scores', path: `${path}/scores`, component: CompositionSectionFactory(COMP_TYPE.SCORES) },
   ];
   const subSectionComponents = subSections.map(section => (
-    <RouteWithGA
+    <Route
       exact
       path={section.path}
       component={section.component}
@@ -102,7 +102,7 @@ export default function Compositions(props) {
         bgColor="gray"
       />
       <Switch>
-        <RouteWithGA
+        <Route
           exact
           path="/compositions"
           component={StylisticStatement}

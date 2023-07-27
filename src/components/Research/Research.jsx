@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import React from 'react';
 import {Helmet} from 'react-helmet';
 import {Box, Flex} from 'rebass';
-import {GA_ACTION, GA_CATEGORY, sendEvent} from '../../analytics';
 import {IMAGE_HEIGHT_WIDTH_RATIO_HERO} from '../../constants';
 import HeroImage from '../../images/research/research-hero.jpg';
 import HeroOverlay, {HeroOverlayPar, HeroOverlayTitle, HERO_OVERLAY_TYPES} from '../HeroOverlay';
@@ -16,14 +15,6 @@ import Dropdown from 'react-dropdown';
 
 import 'react-dropdown/style.css';
 import './Research.css'; // required for stupid dropdown style
-
-function logDownload(url) {
-  sendEvent({
-    category: GA_CATEGORY.EXTERNAL_LINK,
-    action: GA_ACTION.CLICK,
-    label: url,
-  });
-}
 
 const StyledBox = styled(Box)({
   position: 'relative',
@@ -69,7 +60,6 @@ const ResearchItemSection = ({title, year, format, url, imageUrl, imageAltText, 
       href={url}
       target="_blank"
       rel='noreferrer noopener'
-      onClick={() => logDownload(url)}
     >
       <ResearchItemThumbnail
         src={imageUrl}
