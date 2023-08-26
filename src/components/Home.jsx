@@ -37,14 +37,14 @@ const infoBlocks = [
 ];
 
 const PageWrapper = styled.div({});
-const CredoWrapper = styled.div({});
-const CredoPar = styled(Par)({
-  paddingBottom: '1em',
-});
-const CredoSignature = styled(Par)({
-  fontWeight: 'bold',
-  textAlign: 'center',
-});
+// const CredoWrapper = styled.div({});
+// const CredoPar = styled(Par)({
+//   paddingBottom: '1em',
+// });
+// const CredoSignature = styled(Par)({
+//   fontWeight: 'bold',
+//   textAlign: 'center',
+// });
 const ImageWrapper = styled.div({
   display: 'block',
   [MEDIA_QUERIES.breakpoints[0]]: {
