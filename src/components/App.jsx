@@ -34,7 +34,7 @@ const sections = [
   {displayName: 'Statement', path: '/statement', component: Statement, exact: false},
   {displayName: 'Compositions', path: '/compositions', component: Compositions, exact: false},
   {displayName: 'Research', path: '/research', component: Research, exact: false},
-  {displayName: 'Method', path: '/method', component: Method, exact: false},
+  // {displayName: 'Method', path: '/method', component: Method, exact: false},
   {displayName: 'About', path: '/about', component: About, exact: false},
   {displayName: 'Contact', path: '/contact', component: Contact, exact: false},
 ];
