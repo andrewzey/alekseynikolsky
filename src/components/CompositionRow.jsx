@@ -38,7 +38,7 @@ export default class CompositionRow extends React.Component {
     imgUrl: PropTypes.string,
     imgAltText: PropTypes.string,
     pieceTitle: PropTypes.string.isRequired,
-    pieceYear: PropTypes.number.isRequired,
+    pieceYear: PropTypes.oneOfType([PropTypes.number, PropTypes.string]),
     pieceSubtitles: PropTypes.arrayOf(PropTypes.string).isRequired,
     pieceDescription: PropTypes.string.isRequired,
   };
@@ -112,8 +112,8 @@ export default class CompositionRow extends React.Component {
           </Box>
           <Box width={[12 / 12, 7 / 12, 7 / 12]} padding={2}>
             <Title>
-              {pieceTitle}&nbsp;-&nbsp;
-            <Year>{pieceYear}</Year>
+              {pieceTitle}{pieceYear ? <>&nbsp;-&nbsp;
+            <Year>{pieceYear}</Year></> : null}
             </Title>
             {pieceSubtitleParagraphs}
             <Description>
