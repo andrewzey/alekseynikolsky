@@ -9,7 +9,7 @@ import React, {Component} from 'react';
 import {BrowserRouter} from 'react-router-dom';
 import {theme, LINK_COLOR, SITE_MIN_WIDTH} from '../styles';
 import About from './About';
-import Method from './Method';
+// import Method from './Method';
 import Compositions from './Compositions/Compositions';
 import Contact from './Contact';
 import Footer from './Footer';
