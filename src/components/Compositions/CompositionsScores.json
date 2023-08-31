@@ -1,23 +1,43 @@
 [
   {
+    "pieceTitle": "The Way of the Mind",
+    "pieceYear": 2022,
+    "pieceSubtitles": "Sinfonia for Organ Solo",
+    "pieceDescription": "This work was inspired by St. Bonaventure’s treatise “The Mind’s Road to God”, which summarizes the Neoplatonic philosophy of intellectual ascent, adopted by St. Augustine for Christian theology. Following Bonaventure, I show the stages of elevation through the gradual genesis of tonality: from isolated 12 tones to melodic and harmonic intervals, then to 3-tone motifs and chords, growing in number of tones, crystallization of melodic phrases and modes, leading to emergence of melodic line and thematic material. At this point the 6th stage builds the momentum, and the musical movement unleashes its run, bringing to life greater and greater harmonic functionality – until a qualitative transformation occurs, and modal tonality enables beautiful concordance of tones, symbolizing the mystical experience of the union with the Universe that brings peace to the mind.",
+    "mediaType": "score",
+    "mediaUrl": "/scores/nikolsky-2022-the-way-of-the-mind.pdf",
+    "imgUrl": "/images/compositions/scores/mystic-mountain.jpg",
+    "imgAltText": "Mystic Mountain"
+  },
+  {
+    "pieceTitle": "An American Dilemma: Trump and Circumstance",
+    "pieceYear": 2020,
+    "pieceSubtitles": "For Symphonic Orchestra",
+    "pieceDescription": "This is a tone poem that continues the lineage of representing America by means of symphonic art music, such as that of Antonín Dvořák, Charles Ives, Aaron Copland, Samuel Barber, and Leonard Bernstein. Its format is similar to Richard Strauss’s “A Hero’s Life”. Using a nexus of leitmotifs, the music unfolds the story of Trump in his rise to lead and represent a quite substantial part of the American population. Trump’s story reveals the extent to which the “blue-red” schism of the political landscape in the U.S. has split the country, putting its cultural and political heritage and global leadership in jeopardy. The music aims at making the listener emotionally pass through all the episodes of the story. To make the ideas of this symphonic poem accessible to the lay listener, I developed and implemented a novel poly-stylistic and polymodal compositional technique, based on the theory of musical intonation of Boleslav Yavorsky and Boris Asafyev, and on my own research on music perception.",
+    "mediaType": "score",
+    "mediaUrl": "/scores/nikolsky-2020-trump-and-circumstance.pdf",
+    "imgUrl": "/images/compositions/scores/trump-and-circumstance.png",
+    "imgAltText": ""
+  },
+  {
+    "pieceTitle": "Fabulusions",
+    "pieceYear": "2009-2021",
+    "pieceSubtitles": "For Piano Solo",
+    "pieceDescription": "Since my childhood, I have been attracted to fairy tales and story-telling. “Fairy tales” by Gretchaninov, Medtner, Bortkiewicz, Prokofiev, and Tcherepnin, as well as the mysterious symbolic style of Scriabin, Rebikov, early Bartok, Kodaly, Debussy, Caplet, Scott, and Szymanowski set the tone for my exploration and guided me in forging the new genre of “fabulusion.” At its heart, stays the notion of narration. Each piece as though is telling its own story – vague and elusive, hard to express in words, yet distinct in its emotional disposition and carrying deep symbolic meaning. The root “fabula” comes handy in referring to a fantastic plot that receives artistic treatment as the story unveils. Another Latin root “ludere” – “to play” – reflects another important aspect of fabulusions: they theatrically play characters against each other, sometimes with an unpredictable outcome. Many of my fabulusions, I started without knowing how they would end – figuring this out as the composition was materializing.\n\nI chose not to spell out the exact program for each of the pieces, since what matters there is not a specific happening but the “atmosphere” of a fabula – general character of the engaged actors and actions. I left only 3 sources to connote the expressive content of each work and its dramatic development: the programmatic title, the character marks in Italian that accompany every significant change in the music, and citations of well-known compositions, often camouflaged or grotesquely transformed to subliminally suggest certain imagery or emotional disposition to the listener and performer – as though in a dream or a vague recollection.",
+    "mediaType": "score",
+    "mediaUrl": "/scores/nikolsky-fabulusions.zip",
+    "imgUrl": "/images/compositions/scores/nocturne-reverie.png",
+    "imgAltText": ""
+  },
+  {
     "pieceTitle" : "Evening as it is",
     "pieceYear" : 1996,
     "pieceSubtitles" : "For Symphonic Orchestra",
-    "pieceDescription" : "Inspired by the impressionistic music of Ives and Debussy, I forged new style of tonal composition based on thematic writing in chromatic poly-modality. Each section of the music form relies on its own musical mode, the degrees of which receive chromatic alteration as needed in the process of the thematic development – to provide greater tension. I dedicated this work to Edison Denisov, who edited it during his last days in 1996 (despite his fatal illness) and strongly encouraged my compositional ideas. The orchestration pioneers a very unusual approach, emulating the pedalization on a grand piano by layering the decays in harmonic transitions. The resulting morphing effect contributes a special “sfumato” aura to otherwise quite straightforward harmonic functions.\n\nThe music unveils in a free-floating fashion akin Ravel’s Pavane, yet rhythmically articulated to illustrate the lackadaisical contemplation of a night in a big urban cityscape, as during a solitary walk by a bank of a river – perhaps, after a rain, when the air is fresh and streets are empty. The state of relaxation of mind while casual activity of walking provides a peculiar piece of urban poetics to replenish the listener’s soul.",
+    "pieceDescription" : "Inspired by the impressionistic music of Ives and Debussy and based on conventional harmonic and melodic idioms, I forged a new style of poly-modal composition.  Each section of the music form relies on its own musical mode, the degrees of which receive chromatic alteration as needed in the process of the thematic development – to provide greater tension. I dedicated this work to Edison Denisov, who edited it during his last days in 1996 (despite his fatal illness) and strongly encouraged my compositional ideas. The orchestration pioneers a very unusual approach, emulating the pedalization on a grand piano by layering the decays in harmonic transitions. The resulting morphing effect contributes a special “sfumato” aura to otherwise quite straightforward harmonic functions.\n\nThe music unfolds in a free-floating fashion akin to Ravel’s Pavane, yet rhythmically articulated to illustrate the lackadaisical contemplation of a night in a big urban cityscape, as during a solitary walk along a river bank – perhaps, after a rain, when the air is fresh and streets are empty. The state of relaxation of mind during the casual activity of walking provides a peculiar piece of urban poetics to replenish the listener’s soul.",
     "mediaType" : "score",
     "mediaUrl" : "/scores/nikolsky-1996-evening-as-it-is.pdf",
     "imgUrl" : "/images/compositions/scores/korovin-boulevard-by-night.jpg",
     "imgAltText" : "Korovin - Boulevard by Night"
-  },
-  {
-    "pieceTitle" : "Itinerarium Mentis",
-    "pieceYear" : 1994,
-    "pieceSubtitles" : "Sinfonia for Organ Solo",
-    "pieceDescription" : "This work is inspired by St. Bonaventure’s treatise “The Mind’s Road to God”, which summarizes the Neo-platonic philosophy of intellectual ascent, adopted by St. Augustine for Christian theology. According to this view, the world is a ladder for ascending to ultimate Truth in a way similar to learning about the artist by investigating his art. \n\nFollowing Bonaventure, I show 6 stages of elevation from the mere reflection on the corporeal elements, through realization of the mind’s own powers to discovery of Divine essence. Musically this is shown through progressive tonal integration: from isolated 12 tones to melodic and harmonic intervals, then to 3-tone motifs and chords, growing in number of tones, crystallization of melodic phrases and modes, leading to emergence of melodic line and thematic material. At this point the 6th stage builds the momentum, and the musical movement unleashes its run, bringing to life greater and greater harmonic functionality – until the qualitative transformation occurs, and modal tonality enables beautiful concordance of tones, symbolizing the mystical experience of the union with the Universe that brings peace to the spirit.",
-    "mediaType" : "score",
-    "mediaUrl" : "/scores/nikolsky-itinerarium-mentis.pdf",
-    "imgUrl" : "/images/compositions/scores/mystic-mountain.jpg",
-    "imgAltText" : "Mystic Mountain"
   },
   {
     "pieceTitle": "3 Songs after Daniel Harms",
@@ -33,7 +53,7 @@
     "pieceTitle": "Ad Infinitum",
     "pieceYear": 1989,
     "pieceSubtitles": "For Symphonic Orchestra",
-    "pieceDescription": "In 1990, right before leaving Russia, I wrote a symphonic piece as a resolution to the conflicting feelings I had in mediating the past and the future of Russian culture. 1990 was a year of enormous changes in the USSR: the Communist Party all of a sudden dismissed itself, and yielded the ruling wheel to all sort of criminal elements of society, who within a few months merged with the government officials and “privatized” all precious resources in the country – at the absence of any laws to regulate such activities. This left good half of the country jobless, without any prospects.\n\nAt the time, I felt as though the entire civilization crushed – and Russian people will carry on eternal suffering that has been the trait of Russian history. This prompted me to employ a unique “Big Bang” musical form. The music starts and ends with a Big Bang, after which nothing is left - merely noise devoid of any tonal organization. And in between the beginning and end there are multitude of life forms, each of which grows from a germ, flourishes, then goes out of control and gets lost in chaos.\n\nThe entire macro form is built on a pool of minuscule motifs, some of which are tonally organized, and some others, atonally organized. Some motifs are attracted to one another forming melodies, some others repel, and some collide and explode into a chord. The entire harmonic system can be characterized as \"pan-tonality\", housing poly-tonal components of musical texture in a “suspended” manner, resembling how planetary systems are separated by the interplanetary space. One might be able to spot local \"tonics\" in each of the components, but experience them as free floating in relation to each other.\n\n\"Ad Infinitum\" was inspired by the compositional principles of “analytical method” of Pavel Filonov in painting, and presents a monumental tombstone for Shostakovich’s “socialist realism” in symphonies – a manner of drawing the panorama of a contemporary society in a narrative of a musical composition.",
+    "pieceDescription": "“Ad Infinitum” was inspired by the compositional principles of “analytical method” of Pavel Filonov in painting, and presents a tombstone for Shostakovich’s “socialist realism” in symphonies – a manner of drawing a panorama of a contemporary society in a narrative of a musical composition. The music starts and ends with a Big Bang, after which nothing is left but strange noise devoid of any tonal organization. And in between the beginning and end, there are a multitude of life forms, each of which grows out of a germ, flourishes, then goes out of control and gets lost in chaos.\n\nThe entire macro form is built on a pool of minuscule motifs, some of which are organized tonally while others atonally. Some motifs are attracted to each other, forming melodies, some repel each other, some collide to form a chord, while others “explode”. The entire harmonic system can be characterized as \"pan-tonality\" that displaces the poly-tonal components of musical texture in a way resembling planetary systems separated by the interplanetary space. One might be able to spot local \"tonics\" in each of the components, but experience them as freely floating in relation to each other.",
     "mediaType": "score",
     "mediaUrl": "/scores/nikolsky-1989-ad-infinitum.pdf",
     "imgUrl": "/images/compositions/scores/filonov-formula-of-the-revolution.jpg",
