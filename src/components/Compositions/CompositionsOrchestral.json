@@ -14,8 +14,8 @@
     "pieceYear" : 1990,
     "pieceSubtitles" : "For Soprano and Chamber Orchestra\nTatiana Maroushak – Soprano\nOrquesta de Baja California\nEduardo Garcio-Barios – Conductor ",
     "pieceDescription" : "Here are 3 songs for soprano and chamber orchestra after Daniel Harms, a renowned Russian surrealist poet. This is my attempt to strike a balance between modernity and tradition, while presenting a musical “movie” of the very bright surrealistic content of the songs. The music features clear themes, polymodal organization, and bright emotional characteristics.\n\nThe first song is a pastorale about a wild girl, a miller’s daughter, who scares the cattle out of the forest with her spooky eyes. \n\nThe second song describes how an entire town is deeply asleep in the middle of the night, except for one man who stays up counting his money to his deep satisfaction.\n\nThe third song presents the story of a Scythian nomad who has just assassinated a nobleman, and is chased by the nobleman’s servants, gets wounded, and finally dies while helpless gods are watching the entire event.",
-    "mediaType" : "audio",
-    "mediaUrl" : "/audio/orchestral/3-songs-after-daniel-harms.mp3",
+    "mediaType" : "video",
+    "mediaUrl": "https://www.youtube.com/embed/XBSvhXV5WTU",
     "imgUrl" : "/images/compositions/orchestral/chagall-flying-over-town.jpg",
     "imgAltText" : "Chagall - Flying Over Town"
   },
@@ -24,8 +24,9 @@
     "pieceYear" : 1989,
     "pieceSubtitles" : "For Symphonic Orchestra\nPerformed by the Moscow Philharmonic Orchestra\nConductor: Alexander Vedernikov",
     "pieceDescription" : "In 1990, right before leaving Russia, I wrote a symphonic piece as a resolution to the conflicting feelings I had in reconciling the past and the future of Russian culture. 1990 was a year of enormous changes in the USSR: the Communist Party, all of a sudden, dismissed itself and yielded its steering wheel to all sorts of criminal elements of the society, who within a few months merged with the government officials and “privatized” all the precious resources in the country – in the absence of any laws to regulate such activities. This left a good half of the population in financial struggle without any hope for the future.\n\nAt the time, I felt as though the entire civilization had been crushed, and that the Russian people would continue to carry on the eternal suffering which has been the trait of Russian history. This prompted me to employ a unique “Big Bang” musical form. The music starts and ends with a Big Bang, after which nothing is left but strange noise devoid of any tonal organization. And in between the beginning and end, there are a multitude of life forms, each of which grows out of a germ, flourishes, then goes out of control and gets lost in chaos.\n\nThe entire macro form is built on a pool of minuscule motifs, some of which are organized tonally while others atonally. Some motifs are attracted to each other, forming melodies, some repel each other, some collide to form a chord, while others “explode”. The entire harmonic system can be characterized as “pan-tonality” that displaces the poly-tonal components of musical texture in a way resembling planetary systems separated by the interplanetary space. One might be able to spot local “tonics” in each of the components, but experience them as freely floating in relation to each other.\n\n“Ad Infinitum” was inspired by the compositional principles of “analytical method” of Pavel Filonov in painting, and presents a monumental tombstone for Shostakovich’s “socialist realism” in symphonies – a manner of drawing a panorama of a contemporary society in a narrative of a musical composition.",
-    "mediaType" : "audio",
-    "mediaUrl" : "/audio/orchestral/ad-infinitum.mp3",
+    "mediaType" : "video",
+    "mediaUrl": "https://www.youtube.com/embed/89AulEBQ72s",
+
     "imgUrl" : "/images/compositions/orchestral/filonov-war-with-germany-1915.jpg",
     "imgAltText" : "Filonov - War with Germany 1915"
   }

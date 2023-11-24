@@ -14,8 +14,8 @@
     "pieceYear" : 1989,
     "pieceSubtitles" : "For Flute, Violin and Cello.\nPetr Taurov - flute, Zenon Diaz Lauzurica - violin, Aleksandr Nikolayev - cello\nPerformed at the Moscow Tchaikovsky Conservatory",
     "pieceDescription" : "This work represents my attempt to make an interesting “musical story” and elaborate the techniques of handling musical material in a variety of traditional ways – yet maintaining its originality. Five movements, contrasting in style, each reading like a chapter with its own protagonists take place at a different location.\n\nEach movement pays tribute to a set of different historic musical styles: first movement – Handel and Corelli, second – Debussy and Bartók, third – Fauré, Milhaud, Couperin, and Ives, fourth – Alban Berg and Charlie Parker, and fifth – Schoenberg and Prokofiev (the audio recording features an earlier version without the Schoenberg-like section). Stylistically, I emulated merely these composers’ methods of tonal organization, and not their characteristic idioms – to avoid a poly-stylistic or eclectic flavor for the entire composition.\n\nOverall, this music offers great diversity of content and form, combined with bright and contrasting thematic material, and it is charged with strong emotional characteristics. I wanted to find the solution to the crisis of content and contrast, which has been troubling modernist and post-modernist composers since the 1940s.",
-    "mediaType" : "audio",
-    "mediaUrl" : "/audio/chamber/novella.mp3",
+    "mediaType" : "video",
+   "mediaUrl": "https://www.youtube.com/embed/aIN574zzhSc",
     "imgUrl" : "/images/compositions/chamber/petrov-vodkin-fantasia-1925.jpg",
     "imgAltText" : "Petrov - Vodkin Fantasia 1925"
   },
