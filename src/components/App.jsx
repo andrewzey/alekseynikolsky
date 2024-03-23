@@ -10,6 +10,7 @@ import {BrowserRouter} from 'react-router-dom';
 import {theme, LINK_COLOR, SITE_MIN_WIDTH} from '../styles';
 import About from './About';
 // import Method from './Method';
+import Blog from './Blog/Blog';
 import Compositions from './Compositions/Compositions';
 import Contact from './Contact';
 import Footer from './Footer';
@@ -34,6 +35,7 @@ const sections = [
   {displayName: 'Statement', path: '/statement', component: Statement, exact: false},
   {displayName: 'Compositions', path: '/compositions', component: Compositions, exact: false},
   {displayName: 'Research', path: '/research', component: Research, exact: false},
+  {displayName: 'Blog', path: '/blog', component: Blog, exact: false},
   // {displayName: 'Method', path: '/method', component: Method, exact: false},
   {displayName: 'About', path: '/about', component: About, exact: false},
   {displayName: 'Contact', path: '/contact', component: Contact, exact: false},

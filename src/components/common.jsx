@@ -13,7 +13,7 @@ export const Heading1 = styled.h1({
   }
 });
 
-export const Heading2 = styled.h3({
+export const Heading2 = styled.h2({
   ...HEADING_TEXT_STYLE,
   fontSize: '1.5rem',
   fontWeight: 'bold',

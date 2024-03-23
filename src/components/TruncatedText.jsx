@@ -87,7 +87,7 @@ export default class TruncatedText extends React.Component {
     const showTruncated = isTruncateable && !this.state.expanded;
 
     const text = showTruncated ? truncatedText : fullText;
-    const moreLink = isTruncateable
+    const moreLink = this.props.expandable && isTruncateable
       ? this.renderMoreLink()
       : null;
 
