@@ -135,7 +135,7 @@ their similarity to the triplets of the 1st movement) and stressed the
 thunder-like sforzando of the staccato chords at the end of each
 ascending arpeggio wave. He also lyricized the alternative subject by
 desynchronizing it in relation to the accompaniment with the help of a
-carefully weighted rubato. Such asynchrony is exceedingly difficult to
+carefully weighed rubato. Such asynchrony is exceedingly difficult to
 achieve in "Presto Agitato" tempo and can be found in very few
 recordings of the Golden Age of piano (most notably, by Ignaz Friedman).
 By colliding the tempestuous principal part, lyrical alternative part,
@@ -252,14 +252,18 @@ marking the victory of Peace over War in Voskresensky's concert program.
 ## Encores
 
 In response to a long and resounding standing ovation, Mikhail
-Voskresensky gifted the audience with his performance of the Sgambati's
-arrangement of **Gluck**'s famous "***Melodie***." This renowned gem of
+Voskresensky gifted the audience with his performance of Wilhelm Kempff's arrangement of **Gluck**'s
+famous "***Melodie***." This renowned gem of
 a cathartic musical beauty comes from Gluck's opera "Orfeo ed Euridice"
 as one of the dances of the Blessed Spirits in the Elysium -- a most
 appropriate encore for Voskresensky's program. In his rendition, this
 serene melody soared over the technically tricky quavering of the
-non-stop 16th notes of the accompaniment, meticulously distributed
-between both hands. Despite their extreme stretch, Voskresensky's
+non-stop 16th notes of the accompaniment. Kempff’s arrangement differs from the more popular
+version by Sgambati by breaking up the continuous double notes of the accompaniment into a steady
+2-note figuration played in each hand (as opposed to shifting the double-notes from one hand to
+another). So, the technical challenge here is in the almost permanent stretch of each palm where
+the resulting tension does not obstruct the “talk-like” impression of the melodic phrases. Despite
+their extreme stretch, Voskresensky's
 fingers made all 16th-notes form a free-floating backdrop, complementing
 the solitary unveiling of the elated cantilena of the melody in the
 foreground. His skillful pedaling filled the air with an otherworldly
